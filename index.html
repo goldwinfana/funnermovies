@@ -9,7 +9,9 @@
 
   <!-- Favicons -->
   <link href="images/APS_logo-01.png" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="img/apple-touch-icon" rel="apple-touch-icon">
+
+
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
@@ -52,19 +54,48 @@
             <nav class="navbar navbar-default">
               <!-- Brand and toggle get grouped for better mobile display -->
               <div class="navbar-header">
-                <img class="navbar-toggle collapsed" data-toggle="collapse" data-target=".bs-example-navbar-collapse-1" src="APS/Logo-01.png" width="12%" height="10%" style="float: left;">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".bs-example-navbar-collapse-1" aria-expanded="false">
-										<span class="sr-only">Toggle navigation</span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
+                <a href="#"><img class="navbar-toggle collapsed img" src="APS/Logo-01.png" ></a>
+                <button type="button" title="Menu" class="navbar-toggle collapsed" onclick="openNav()" aria-expanded="false">
+                    <span style="font-size:30px;cursor:pointer;color: yellowgreen;">&#9776;</span>
 									</button>
                 <!-- Brand -->
                 <a class="navbar-brand page-scroll sticky-logo" href="index.html">
-                 
-                  <!-- <h1><span>e</span>Business</h1> -->
-                  <!-- Uncomment below if you prefer to use an image logo -->
-                  <!-- <img src="img/logo.png" alt="" title=""> -->
+                  <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <ul class="li-navbar">
+                      <li class="active">
+                        <a onclick="closeNav()" class="page-scroll" href="#home">Home
+                          <i class="fa fa-home"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a onclick="closeNav()" class="page-scroll" href="#about">About
+                          <i class="fa fa-info-circle"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a onclick="closeNav()" class="page-scroll" href="#services">Services
+                          <i class="fa fa-cogs"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a onclick="closeNav()" class="page-scroll" href="#csi">CSI
+                          <i class="fa fa-medkit"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a onclick="closeNav()" class="page-scroll" href="#careers">Careers
+                          <i class="fa fa-graduation-cap"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a onclick="closeNav()" class="page-scroll" href="#contact">Contact
+                          <i class="fa fa-address-book-o"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
 								</a>
               </div>
               <!-- Collect the nav links, forms, and other content for toggling -->
@@ -82,7 +113,7 @@
                   </li>
                   <li>
                     <a class="page-scroll" href="#csi">CSI</a>
-                  </li>
+                  </li><span></span>
                   <li>
                     <a class="page-scroll" href="#careers">Careers</a>
                   </li>
@@ -106,27 +137,27 @@
   <div id="home" class="slider-area">
     <div class="bend niceties preview-2">
       <div id="ensign-nivoslider" class="slides">
-        <img src="images/new-java.jpg" height="300px" alt="" title="#slider-direction-1" />
-        <img src="images/new-img.jpg" alt="" title="#slider-direction-2" />
-        <img src="images/new-sd.jpg" alt="" title="#slider-direction-3" />
-        <img src="images/new-cust.png" alt="" title="#slider-direction-4" />
+        <img src="img/banner.jpg" height="300px" alt="" title="#slider-direction-1" />
+        <img src="img/careers.jpg" alt="" title="#slider-direction-2" />
+        <img src="img/contacts.jpg" alt="" title="#slider-direction-3" />
+        <img src="img/csi.jpg" alt="" title="#slider-direction-4" />
       </div>
 
       <!-- direction 1 -->
-      <div id="slider-direction-1" class="slider-direction slider-one">
+      <!-- <div id="slider-direction-1" class="slider-direction slider-one">
         <div class="container">
           <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="slider-content">
-                <!-- layer 1 -->
+          
                 <div class="layer-1-1 hidden-xs wow slideInDown" data-wow-duration="2s" data-wow-delay=".2s">
                   <h2 class="title1">Your Business Needs New Ideas? </h2>
                 </div>
-                <!-- layer 2 -->
+               
                 <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
                   <h1 class="title2">Let Us Bring You Effective Solutions</h1>
                 </div>
-                <!-- layer 3 -->
+                
                 <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
                   <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
                   <a class="ready-btn page-scroll" href="#about">Learn More</a>
@@ -135,82 +166,8 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
-      <!-- direction 2 -->
-      <div id="slider-direction-2" class="slider-direction slider-two">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="slider-content text-center">
-                <!-- layer 1 -->
-                <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <h2 class="title1">We Produce Results </h2>
-                </div>
-                <!-- layer 2 -->
-                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                  <h1 class="title2">And Provide The Best Products</h1>
-                </div>
-                <!-- layer 3 -->
-                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
-                  <a class="ready-btn page-scroll" href="#about">Learn More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- direction 3 -->
-      <div id="slider-direction-3" class="slider-direction slider-two">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="slider-content">
-                <!-- layer 1 -->
-                <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <h2 class="title1">We Care </h2>
-                </div>
-                <!-- layer 2 -->
-                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                  <h1 class="title2">We Are Making A Difference For Tommorrow </h1>
-                </div>
-                <!-- layer 3 -->
-                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
-                  <a class="ready-btn page-scroll" href="#about">Learn More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-        <!-- direction 4 -->
-        <div id="slider-direction-2" class="slider-direction slider-two">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="slider-content text-center">
-                  <!-- layer 1 -->
-                  <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                    <h2 class="title1">Make A Career Change</h2>
-                  </div>
-                  <!-- layer 2 -->
-                  <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                    <h1 class="title2">Take It To The Next Level</h1>
-                  </div>
-                  <!-- layer 3 -->
-                  <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                    <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
-                    <a class="ready-btn page-scroll" href="#about">Learn More</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
     </div>
   </div>
   <!-- End Slider Area -->
@@ -225,26 +182,118 @@
           </div>
         </div>
       </div>
+      
       <div class="row">
-        
-        <!-- what we do -->
+        <div class="col-md-6 col-sm-6 col-xs-12 about2" >
+              <img src="APS/Logo-01.png" width="200" height="200" align="left">
+              <p>
+
+                African Proficient Software, previously trading as Leverage Point, is a software development company 
+                that is focused on Custom Software Development, Software outsourcing services, mobile application
+                 development, and ITC Governance Framework Solutions. With more than 5 years of experience in software
+                  development, we have developed innovative and intelligent software solutions that aim to meet the 
+                  needs of the clients and surpass them.
+                We have energetic and intelligent staff with a passion for empowering businesses through the development
+                 and use of information and communications technologies.<br/><br/>
+
+                 Our staff possess the skills and knowledge necessary to visualize the ICT needs of organizations and to 
+                 meet those needs with innovative and intelligent solutions.<br/><br/>
+
+                Our approach is guided and driven by the following strengths:
+             </p>
+              
+             <!-- start for about tab -->
+           
+              <div class="tab-menu">
+                <ul class="nav nav-tabs" role="tablist">
+                  <li class="active">
+                    <a href="#p-view-1" role="tab" data-toggle="tab">Focused Creativity</a>
+                  </li>
+                  <li>
+                    <a href="#p-view-2" role="tab" data-toggle="tab">Innovation</a>
+                  </li>
+                  <li>
+                    <a href="#p-view-3" role="tab" data-toggle="tab">Winning Strategy</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-content">
+                <div class="tab-pane active" id="p-view-1">
+                  <div class="tab-inner">
+                    <div class="event-content head-team">
+                      <a >
+                        <img src="images/focus_creative.png" alt="" align="left">
+                        </a>
+                      <p>
+                        Together we will explore creative options you would not have envisaged in your day to day operations.
+                         We then evaluate those options based on your goals not subjective to trendy styles. We will take
+                          calculated and unexpected creative risks to find the perfect fit to visually articulate your desired. 
+                          Our starting point is that we see not only innovative design as a key instrument in your business or 
+                          institution’s performance, but also the services necessary to sustain your growth as the different
+                           ecosystems continue to mature and change on assisting clients.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="p-view-2">
+                  <div class="tab-inner">
+                    <div class="event-content head-team">
+                      <a >
+                        <img src="images/innovate.png" alt="" align="left">
+                        </a>
+                      <!-- <h4>Innovation</h4> -->
+                      <p>
+                        Driven by relooking and breaking down the impossible idea, and developing a focused and detailed
+                         observation. We will study the problem, assess the opportunities, understand your organization 
+                         and apply our expertise to your unique challenge. We will work together to clarify your project 
+                         ision, scope and requirements. We will find a way to emerge with a surprisingly great business
+                          opportunity within your existing business.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="p-view-3">
+                  <div class="tab-inner">
+                    <div class="event-content head-team">
+                      <a >
+                        <img src="images/win_strategy.png"  alt="" align="left">
+                        </a>
+                      <!-- <h4>Winning Strategy</h4> -->
+                      <p>
+                        In all our service offerings, we will always devise and develop a unique strategy that requires our disciplined 
+                        and proven strategy to put your ideas a step ahead of your opponents and emerge with winning methods. 
+                        We take the time to understand who you are and where you are going. We clarify your vision and redefine 
+                        your strategies. We ask a lot of questions. We listen. We wrestle with the why and what of your project,
+                         operations or ambitions before the how, how much and how long.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- end of about tab -->
+
+
+            </div>
+          
+        <!-- end of what we do -->
       <div class="col-md-6 col-sm-6 col-xs-12 about1">
-                <div class="faq-details">
+                <div class="what-we-do">
                   <div class="panel-group" id="accordion">
                     <div  style="text-align: center">
-                      <h4 class="sec-head">What We Do</h4>
+                      <h4 class="sec-head" style="color: yellowgreen;">What We Do</h4>
                     </div>
                     <!-- Panel Default -->
                     <div class="panel panel-default">
                       <div class="panel-heading">
                         <h4 class="check-title">
-                            <a data-toggle="collapse" class="active" data-parent="#accordion" href="#we-do-1">
-                                                      <span class="acc-icons"></span>IT Policies and Procedures
+                            <a data-toggle="collapse" data-parent="#accordion" href="#we-do-1">
+                              <span class="acc-icons"></span>IT Policies and Procedures
                             </a>
                           </h4>
                         
                       </div>
-                      <div id="we-do-1" class="panel-collapse collapse in">
+                      <div id="we-do-1" class="panel-collapse collapse">
                         <div class="panel-body">
                             
                         </div>
@@ -462,109 +511,9 @@
             </div>
           </div>
         </div>
-               <!--end what we do -->
-        <!-- single-well end-->
-        <div class="col-md-6 col-sm-6 col-xs-12 about2" >
-          <div class="well-middle">
-            <div class="single-well">
-              <a href="#">
-                <img src="APS/Logo-01.png" style="background: cadetblue">
-              </a>
-              <p>
-
-                African Proficient Software, previously trading as Leverage Point, is a software development company 
-                that is focused on Custom Software Development, Software outsourcing services, mobile application
-                 development, and ITC Governance Framework Solutions. With more than 5 years of experience in software
-                  development, we have developed innovative and intelligent software solutions that aim to meet the 
-                  needs of the clients and surpass them.
-                We have energetic and intelligent staff with a passion for empowering businesses through the development
-                 and use of information and communications technologies.<br/><br/>
-
-                 Our staff possess the skills and knowledge necessary to visualize the ICT needs of organizations and to 
-                 meet those needs with innovative and intelligent solutions.<br/><br/>
-
-                Our approach is guided and driven by the following strengths:
-             </p>
-              
-
-
-
-             <!-- start for about tab -->
-           
-              <div class="tab-menu">
-                <ul class="nav nav-tabs" role="tablist">
-                  <li class="active">
-                    <a href="#p-view-1" role="tab" data-toggle="tab">Focused Creativity</a>
-                  </li>
-                  <li>
-                    <a href="#p-view-2" role="tab" data-toggle="tab">Innovation</a>
-                  </li>
-                  <li>
-                    <a href="#p-view-3" role="tab" data-toggle="tab">Winning Strategy</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="tab-content">
-                <div class="tab-pane active" id="p-view-1">
-                  <div class="tab-inner">
-                    <div class="event-content head-team">
-                      <a >
-                        <img src="images/focus_creative.png" alt="">
-                        </a>
-                      <h4>Focused Creativity</h4>
-                      <p>
-                        Together we will explore creative options you would not have envisaged in your day to day operations.
-                         We then evaluate those options based on your goals not subjective to trendy styles. We will take
-                          calculated and unexpected creative risks to find the perfect fit to visually articulate your desired. 
-                          Our starting point is that we see not only innovative design as a key instrument in your business or 
-                          institution’s performance, but also the services necessary to sustain your growth as the different
-                           ecosystems continue to mature and change on assisting clients.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="tab-pane" id="p-view-2">
-                  <div class="tab-inner">
-                    <div class="event-content head-team">
-                      <a >
-                        <img src="images/innovation.jpg" width="200" height="80" alt="">
-                        </a>
-                      <!-- <h4>Innovation</h4> -->
-                      <p>
-                        Driven by relooking and breaking down the impossible idea, and developing a focused and detailed
-                         observation. We will study the problem, assess the opportunities, understand your organization 
-                         and apply our expertise to your unique challenge. We will work together to clarify your project 
-                         ision, scope and requirements. We will find a way to emerge with a surprisingly great business
-                          opportunity within your existing business.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="tab-pane" id="p-view-3">
-                  <div class="tab-inner">
-                    <div class="event-content head-team">
-                      <a >
-                        <img src="images/win_strategy.png"  alt="">
-                        </a>
-                      <!-- <h4>Winning Strategy</h4> -->
-                      <p>
-                        In all our service offerings, we will always devise and develop a unique strategy that requires our disciplined 
-                        and proven strategy to put your ideas a step ahead of your opponents and emerge with winning methods. 
-                        We take the time to understand who you are and where you are going. We clarify your vision and redefine 
-                        your strategies. We ask a lot of questions. We listen. We wrestle with the why and what of your project,
-                         operations or ambitions before the how, how much and how long.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- end of about tab -->
-
-
-            </div>
-          </div>
-        </div>
+  
+      </div>
+    </div><br/>
         <!-- End col-->
       </div>
     </div>
@@ -581,15 +530,29 @@
           </div>
         </div>
       </div>
-      <div class="row text-center">
+         
+
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="essentials">
+              We have energetic and intelligent staff with a passion for empowering businesses through the development
+              and use of information and communications technologies. Our staff possess the skills and knowledge
+                necessary to visualize the ICT needs of organizations and to meet those needs with innovative and 
+                intelligent solutions.
+            </div>
+        </div>
+      </div>
+        
+     
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
         <div class="services-contents">
           <!-- Start Left services -->
           <!-- End Left services -->
-         
 
             <div class="tab-menu">
               <!-- Nav tabs -->
-              <ul class="nav nav-tabs" role="tablist">
+              <ul class="nav nav-tabs last" role="tablist">
                 <li class="active">
                   <a href="#p-view-custom" role="tab" data-toggle="tab">Custom Software Development</a>
                 </li>
@@ -605,18 +568,16 @@
               <div class="tab-pane active" id="p-view-custom">
                 <div class="tab-inner">
                   <div class="event-content head-team">
-                  <div style="display: flex;">
-                    <span style="margin: 2%;margin-left: 0%;">
-                      <img src="images/custom.jpg" width="800" height="600">
-                    </span>
-                    <span>
-                    <h3 style="margin-top: 2%;color: yellowgreen;">Technologies and Development process</h3>
+                  <div class="custom-content">
+                    <img src="images/custom.jpg" style="margin-right: 2%;" width="200" height="200" align="left">
+                 
+                    <h3 style="color: yellowgreen;">Technologies and Development process</h3>
                     <p>
                     We have more than 5 years of experience in custom software development. Our expertise entails of a comprehensive set
                     of open-source and relevant technologies that enable us to carry out the most complex and challenging development 
                     projects to the customer’s satisfactory requirements, expectations and preferences.
                     </p>
-                  </span>
+                  
                 </div>
                     <h3 style="color: yellowgreen;">Our Custom Software Development Methodologies</h3>
                     <p>
@@ -634,11 +595,8 @@
               <div class="tab-pane" id="p-view-advisory">
                 <div class="tab-inner">
                   <div class="event-content head-team">
-                    <div style="display: flex;">
-                      <span style="margin: 2%;margin-left: 0%;">
-                        <img src="images/android.png">
-                      </span>
-                      <span>
+                    <div class="custom-content">
+                      <img src="images/adv.png" style="margin-right: 2%;" width="200" height="200" align="left">
                       <p>
                         The right technology implemented properly, correctly managed and monitored, often lead to visible 
                         advantages and gains in business efficiency and growth. It is crucial to acquire good and sound 
@@ -649,7 +607,6 @@
                         We have a team of experts to work with clients in analysing issues within the client’s business that arise 
                         technological aspects of business.
                       </p>
-                      </span>
                     </div>
                     
                     <h3 style="color: yellowgreen;">We offer IT advisory in the following fields:</h3>
@@ -773,11 +730,8 @@
               <div class="tab-pane" id="p-view-mobile">
                 <div class="tab-inner">
                   <div class="event-content head-team">
-                    <div style="display: flex;">
-                      <span style="margin: 2%;margin-left: 0%;">
-                        <img src="images/Mobile-App.png" width="100" height="100">
-                      </span>
-                      <span>
+                    <div class="custom-content">
+                      <img src="images/Mobile-App.png" style="margin-right: 2%;" width="200" height="200" align="left">
                       <p>
                         African Proficient Software has more than 5 years of experience in mobile application development. 
                         With our constant up to date technology.
@@ -785,89 +739,101 @@
                       <p> 
                         We develop innovative and efficient mobile technologies to assist your business reach beyond and above desktop computers and laptops.
                        </p>
-                     </div>
+                     </div> <br/><br/>
                      <h3 style="color: yellowgreen;"> We offer expertise in the following services:</h3>
 
                      <!-- advisory keys -->
-                    <div>
-                      <div  style="background-color: greenyellow;" class="panel panel-default customs"  data-toggle="collapse" data-parent="#accordion" href="#mobile-1">
+                   
+                    
+                      <div   class="panel panel-default customs"  data-toggle="collapse" data-parent="#accordion" href="#mobile-1">
                         <div class="panel-heading">
                           <h6 class="check-title" >
-                              <a >
-                                Android Application Development<i style="float: right;font-size: xx-large;" class="fa fa-angle-right"></i>
-                              </a>
+                            <a class="apps-contant">
+                              <img src="images/android_device.png" width="60" height="30">
+                              <i style="float: right;font-size: xx-large;" class="fa fa-angle-right"></i>
+                            </a>
+
+                            <a class="apps-contant2">
+                              <div class="apps-desc">
+                                <span style="float: left;"><img src="images/android_device.png"  width="50" height="20"></span>
+                                <span style="width: 50%;">Android Application Development</span>
+                                <span class="fa fa-angle-right" style="float: right;font-size: xx-large;"></span>
+                            </div>
+                            </a>
                             </h6>
                         </div>
                         <div id="mobile-1" class="panel-collapse collapse">
                           <div class="panel-body" >
-                            <div style="display: flex;">
-                              <span style="margin: 2%;margin-left: 0%;">
-                                <img src="images/android_device.png" style="background: black;" width="250" height="150">
-                              </span>
-                              <span>
                               <p>
                                 APS’s approach to IT Policies and Procedures establishes the rules of conduct within an organization, 
                                 outlining the responsibilitiesof both employees and employers and also ensures that our client’s information 
                                 is kept safe. Having these policies and procedures enables organizations to have the power to protect any
                                  information that is disclosed to them by unauthorized access and purposes by unauthorized individuals.
                               </p>
-                             </div>
                           </div>
                         </div>
                       </div>
 
-                      <div  style="background-color: orange;" class="panel panel-default customs"  data-toggle="collapse" data-parent="#accordion" href="#mobile-2">
+                      <div class="panel panel-default customs"  data-toggle="collapse" data-parent="#accordion" href="#mobile-2">
                         <div class="panel-heading">
                           <h6 class="check-title" >
-                              <a >
-                                iOS Application Development (iPhone, iPad)<i style="float: right;font-size: xx-large;" class="fa fa-angle-right"></i>
-                              </a>
+                            <a class="apps-contant">
+                              <img src="images/apple_ios.png" width="50" height="30">
+                              <i style="float: right;font-size: xx-large;" class="fa fa-angle-right"></i>
+                            </a>
+                            
+                            <a  class="apps-contant2">
+                              <div class="apps-desc">
+                                <span style="float: left;"><img src="images/apple_ios.png"  width="50" height="20"></span>
+                                <span style="width: 50%;"> iOS Application Development(iPhone,iPad)</span>
+                                <span class="fa fa-angle-right" style="float: right;font-size: xx-large;"></span>
+                            </div>
+                            
+                            </a>
                             </h6>
                         </div>
                         <div id="mobile-2" class="panel-collapse collapse">
-                          <div class="panel-body" >
-                            <div style="display: flex;">
-                              <span style="margin: 2%;margin-left: 0%;">
-                                <img src="images/android_device.png" style="background: black;" width="250" height="150">
-                              </span>
-                              <span>
+                          <div class="panel-body">
                               <p>
                                 APS’s approach to IT Strategic Planning enables organizations to make decisions and implement solutions that support
                                  the overall strategic plan. We provide our clients with useful tools that guide day-to-day decisions, that also 
                                  evaluate progress and changing approaches when moving forward.
                               </p>
-                             </div>
                           </div>
                         </div>
                       </div>
 
-                      <div  style="background-color: lightseagreen;" class="panel panel-default customs"  data-toggle="collapse" data-parent="#accordion" href="#mobile-3">
+                      <div   class="panel panel-default customs"  data-toggle="collapse" data-parent="#accordion" href="#mobile-3">
                         <div class="panel-heading">
                           <h6 class="check-title" >
-                              <a >
-                                Windows Phone application<i style="float: right;font-size: xx-large;" class="fa fa-angle-right"></i>
-                              </a>
+                            <a class="apps-contant">
+                              <img src="images/wi1.png" width="60" height="20">
+                              <i style="float: right;font-size: xx-large;" class="fa fa-angle-right"></i>
+                            </a>
+                            
+                            <a  class="apps-contant2">
+                              <div class="apps-desc">
+                                <span style="float: left;"><img src="images/wi1.png"  width="60" height="20"></span>
+                                <span style="width: 50%;">Windows Phone Application</span>
+                                <span class="fa fa-angle-right" style="float: right;font-size: xx-large;"></span>
+                            </div>
+                           
+                            </a>
                             </h6>
                         </div>
                         <div id="mobile-3" class="panel-collapse collapse">
                           <div class="panel-body" >
-                            <div style="display: flex;">
-                              <span style="margin: 2%;margin-left: 0%;">
-                                <img src="images/android_device.png" style="background: black;" width="250" height="150">
-                              </span>
-                              <span>
                               <p>
                                 APS’s approach to ICT Governance ensures that the senior management of an organization retains control of , 
                                 and responsibility for, its IT operation. We tailor make ways and methods through which an organization can implement,
                                  manage and monitor ICT governance. We also provide guidelines and measures to effectively utilize IT resources and 
                                  processes within an organization.
                               </p>
-                             </div>
                           </div>
                         </div>
                       </div>
   
-                      
+                    </div>
                     </div>
                       <!-- end mobile keys -->
 
@@ -876,7 +842,7 @@
                         information and communications technologies. Our staff possess the skills and knowledge necessary to visualize the
                          ICT needs of organizations and to meet those needs with innovative and intelligent solutions.
                       </p>
-                      <h3 style="color: yellowgreen;">Our Mobile application development service plan comprises of:</h3>
+                      <h3 style="color: yellowgreen;font-size: 5vm;">Our Mobile application development service plan comprises of:</h3>
                       <p>
                         <ul>
                           <li>
@@ -898,6 +864,7 @@
                 </div>
               </div>
             </div>
+            </div>
           <!-- end of inner pannel -->
 
 
@@ -908,7 +875,7 @@
   </div>
   <!-- End Service area -->
  <!-- Start csi Area -->
- <div id="csi" class="portfolio-area area-padding fix">
+ <div style="background-color: #f9f9f9;" id="csi" class="portfolio-area area-padding fix">
    
   <div class="container">
     <div class="row">
@@ -924,7 +891,7 @@
           <span style="margin-left: 2%;margin-right: 2%;">
             <img  src="images/valdezia.jpg" width="80%" height="150">
           </span>
-         <br/>
+          <span class="border-line"></span>
             <span>
               Is atertiatry education fund which assists students from 
               the improverished village of Valdezia in Limpopo, who then intend to give to
@@ -940,11 +907,11 @@
         </div>
       </div>
       <div class="col-md-4 col-sm-4 col-xs-12">
-        <div class="pri_table_list active">
+        <div class="pri_table_list">
           <span style="margin-left: 2%;margin-right: 2%;">
             <img  src="images/masinyusane.jpg" width="80%" height="150">
           </span>
-          <br/>
+          <span class="border-line"></span>
              <span>
              Is a registered NPO / Child & Youth Care centre situated in Atteridgeville
              (Saulsville) west of Pretoria. African Proficient Group is a proud 
@@ -963,7 +930,7 @@
           <span style="margin-left: 2%;margin-right: 2%;">
             <img  src="images/GSB.jpg" width="100%" height="150" >
           </span>
-          <br/>
+          <span class="border-line"></span>
             <span style="padding: 10px 15px;">
             The Graduate Scool of Business commitment is to research and development, 
             mainly in the area of innovation. African Proficient Group has partnered
@@ -976,7 +943,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div><br/>
 </div>
 <!-- End csi table area -->
 
@@ -991,25 +958,21 @@
         </div>
       </div>
       <div class="row">
-          <div class="career-header" style="display: flex">
-              <h1 style="margin: 2%;margin-top: 0;">
-                <img src="images/careers_icon.png" alt="">
-              </h1>
-              <span>
-              <p>
-                Our business is growing, both in experience and in the services we offer. Join us and make a key contribution
-                to the future of our great organization. Submit your CV with a clear outline of how you could add value to our
-                  unique, diverse and growing organisation.
-              </p>
+          <img src="images/careers_icon.png" style="margin-right: 20px;" width="150" height="150" alt="" align="left">
+            <p>
+              Our business is growing, both in experience and in the services we offer. Join us and make a key contribution
+              to the future of our great organization. Submit your CV with a clear outline of how you could add value to our
+                unique, diverse and growing organisation.
+            </p>
 
-              <p>
-                This is a cornerstone of our culture, where our people at all levels have the opportunity to share and learn based
-                on their expertise and experience. You will be exposed to a broad range of different industries and specialties at
-                  all levels.
-              </p>
-            </span>
-          </div>
-         
+            <p>
+              This is a cornerstone of our culture, where our people at all levels have the opportunity to share and learn based
+              on their expertise and experience. You will be exposed to a broad range of different industries and specialties at
+                all levels.
+            </p>
+      </div>
+         <br/>
+         <div class="row">
           <div class="col-md-4 col-sm-4 col-xs-12">
             <div class="about-move">
               <div class="services-details">
@@ -1048,12 +1011,20 @@
               </div>
             </div>
           </div>
-        </div> 
-      </div>
-      <h5>Submit Your CV on careers@afrips.co.za</h5>
-      </div>
+        </div> .
+
+        <div class="col-md-12">
+          
+          <h4>Submit Your CV on <i class="fa fa-arrow-right"></i> careers@afrips.co.za</h4>
+            
+        </div>
+
 
       </div>
+    </div>
+         
+      </div>
+
       <!-- end Row -->
     <!-- </div>
   </div> -->
@@ -1061,7 +1032,7 @@
 
 
   <!-- Start contact Area -->
-  <div id="contact" class="contact-area">
+  <div style="background-color: #f9f9f9;" id="contact" class="contact-area">
     <div class="contact-inner area-padding">
       <div class="contact-overly"></div>
       <div class="container ">
@@ -1121,32 +1092,58 @@
           </div>
           <!-- End Google Map -->
 
+
+
           <!-- Start contact form-->
-           <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="form contact-form">
-              <div id="sendmessage">Your message has been sent. Thank you!</div>
-              <div id="errormessage"></div>
-              <form action="" method="post" role="form" class="contactForm">
-                <div class="form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validation"></div>
+      <div style="text-align: center; margin: 5%;">
+       <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#contactForm">Leave a message</button>
+      </div> 
+            <!-- Modal -->
+            <div class="modal fade" id="contactForm" role="dialog" style="height: 100%;text-align: center;">
+              <div class="modal-dialog">
+              
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title"><img src="APS/Logo-01.png" width="100" >Contact Form</h4>
+                  </div>
+                  <div class="modal-body">
+                    
+                    <div class="form contact-form">
+                      <div id="sendmessage">Your message has been sent. Thank you!</div>
+                      <div id="errormessage"></div>
+                      <form action="" method="post" role="form" class="contactForm">
+                        <div class="form-group">
+                          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                          <div class="validation"></div>
+                        </div>
+                        <div class="form-group">
+                          <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                          <div class="validation"></div>
+                        </div>
+                        <div class="form-group">
+                          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                          <div class="validation"></div>
+                        </div>
+                        <div class="form-group">
+                          <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                          <div class="validation"></div>
+                        </div>
+                        <div class="text-center"><button type="submit">Send Message</button></div>
+                      </form>
+                    </div>
+                    
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
                 </div>
-                <div class="form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                  <div class="validation"></div>
-                </div>
-                <div class="text-center"><button type="submit">Send Message</button></div>
-              </form>
+                
+              </div>
             </div>
-          </div>
+           
+
           <!-- End contact form-->
         </div>
       </div>
@@ -1238,7 +1235,7 @@
     </div>
   </footer>
 
-    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <a href="#" style="display:block" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
   
   <!-- JavaScript Libraries -->

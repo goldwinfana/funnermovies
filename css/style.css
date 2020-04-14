@@ -1,5 +1,7 @@
 html, body {
   height: 100%;
+  background: #eee;
+  min-width: 250px;
 }
 
 .floatleft {
@@ -63,7 +65,7 @@ h2 {
 }
 
 h3 {
-  font-size: 30px;
+  /* font-size: 30px; */
   line-height: 32px;
 }
 
@@ -97,7 +99,7 @@ a:active, a:hover {
 }
 
 body {
-  background: #fff none repeat scroll 0 0;
+  background: #eee none repeat scroll 0 0;
   color: #444;
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
@@ -114,10 +116,15 @@ body {
   color: #fff;
   padding: 6px 12px 9px 12px;
   font-size: 16px;
-  border-radius: 2px;
+  border-radius: 50%;
   right: 15px;
   bottom: 15px;
   transition: background 0.5s;
+}
+.navbar-default .navbar-toggle.collapsed.img{
+  width:12%;
+  height:10%;
+  float: left;
 }
 
 @media (max-width: 768px) {
@@ -129,6 +136,9 @@ body {
 
 .about1 {
   width: 30%;
+  border: ridge 2px;
+  border-radius: 10px;
+  border-color: rgba(251, 251, 251, 0.21);
 }
 
 .about2 {
@@ -183,7 +193,7 @@ div#preloader {
 }
 
 .area-padding {
-  padding: 70px 0px 80px;
+  padding: 70px 0px 0px;
 }
 
 .area-padding-2 {
@@ -232,11 +242,30 @@ div#preloader {
 .header-area {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: 2%;
+  right: 2%;
   height: auto;
-  background: cadetblue;
+  background: #CCCCCC;
   z-index: 9;
+
+  box-shadow: rgb(183, 183, 183) 0px 1px 3px;
+
+ 
+    margin-top: -30px;
+
+    background: rgb(204, 204, 204);
+    padding: 38px 0px 2px;
+    border-radius: 18px;
+    overflow: hidden;
+}
+ul.li-navbar{
+  text-align: center;
+}
+ul.li-navbar i{
+  float: right;
+}
+ul.li-navbar i:hover{
+  float: none;
 }
 
 .navbar-header a.navbar-brand {
@@ -319,7 +348,7 @@ div#preloader {
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #fff;
+  background-color: yellowgreen;
   width: 30px;
   height: 2px;
 }
@@ -354,11 +383,13 @@ div#preloader {
 /*--------------------------------*/
 
 .header-area.stick {
-  background-color: cadetblue;
+  background-color: #CCCCCC;
   /* height: inherit; */
+  border-bottom: solid 1px grey;
   position: fixed;
   top: 0;
-  width: 100%;
+  left: 2%;
+  right: 2%;
   z-index: 1000;
 }
 
@@ -433,7 +464,7 @@ div#preloader {
 }
 
 .stick .navbar-default .navbar-toggle .icon-bar {
-  background-color: #fff;
+  background-color: yellowgreen;
   width: 30px;
   height: 2px;
 }
@@ -488,8 +519,8 @@ div#preloader {
 }
 
 .services-details {
-  padding-top: 40px;
   transition: all 0.5s ease 0s;
+  font-style: italic;
 }
 
 .services-details:hover h4, .services-details:hover .services-icon {
@@ -540,10 +571,10 @@ div#preloader {
 }
 
 /*----------------------------------------
-  6.Faq Area
+  6.What we do Area
 ----------------------------------------*/
 
-.faq-details .panel-heading {
+.what-we-do .panel-heading {
   padding: 0;
 }
 
@@ -553,7 +584,7 @@ div#preloader {
   color: #333;
 }
 
-.faq-details h4.check-title a {
+.what-we-do h4.check-title a {
   color: #333;
   display: block;
   font-weight: 700;
@@ -561,24 +592,25 @@ div#preloader {
   margin-left: 40px;
   padding: 6px 10px;
   text-decoration: none;
+  font-size: smaller;
 }
 
-.panel-body {
+/* .panel-body {
   padding: 15px 15px 0px 50px;
-}
+} */
 
-.faq-details h4.check-title {
+.what-we-do h4.check-title {
   color: #444;
   font-size: 12px;
   font-weight: 500;
   margin-bottom: 0;
 }
 
-.faq-details a span.acc-icons {
+.what-we-do a span.acc-icons {
   position: relative;
 }
 
-.faq-details a span.acc-icons::before {
+.what-we-do a span.acc-icons::before {
   color: #333;
   content: "";
   font-family: fontawesome;
@@ -592,11 +624,11 @@ div#preloader {
   width: 42px;
 }
 
-.faq-details h4.check-title a.active, .faq-details a.active span.acc-icons::before {
+.what-we-do h4.check-title a.active, .what-we-do a.active span.acc-icons::before {
   color: #3EC1D5;
 }
 
-.faq-details a.active span.acc-icons::before {
+.what-we-do a.active span.acc-icons::before {
   content: "";
   font-family: fontawesome;
   /* font-size: 24px; */
@@ -1207,7 +1239,16 @@ div#preloader {
   text-align: center;
   transition: all 0.4s ease 0s;
   background: #fff;
+  border-radius: 10px;
+  padding: inherit;
+  display: inline-grid;
 }
+span.border-line {
+    border-bottom-style: solid;
+    border-color: lightgray;
+    margin: 5px;
+}
+
 
 .pri_table_list h3 span {
   font-size: 16px;
@@ -1298,7 +1339,7 @@ div#preloader {
 }
 
 .active>h3 {
-  background: #f5f5f5 none repeat scroll 0 0;
+  /* background: #f5f5f5 none repeat scroll 0 0; */
   color: #333;
   transition: all 0.4s ease 0s;
 }
@@ -2319,8 +2360,87 @@ span.email-notes {
   padding-top: 30px;
 }
 
+.col-md-13 {
+  display: flex;
+}
+.custom-content {
+  margin-top: 10px;
+}
 
+.career-img{
+  margin: 2%;
+  margin-top: 0;
+  width: 50%;
+}
+.apps-contant{
+  display: none;
+}
+.apps-contant2{
+  display: block;
+}
+.slider-area {
+  top: 16%;
+}
+.about-area {
+  margin-top: 4%;
+}
+
+div.apps-desc {
+  display: table;
+  width: 100%;
+  table-layout: fixed;    /* For cells of equal size */
+}
+div.apps-desc span {
+  display: table-cell;
+  text-align: center;
+}
+
+div.essentials{
+
+    margin-bottom: 10px;
+    padding: 20px 6px 20px;
+    border-radius: 18px;
+    border-style: ridge;
+}
 
 /*----------------------------------------
  .End CSS
 ----------------------------------------*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

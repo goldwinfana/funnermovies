@@ -109,7 +109,7 @@
   cursor: pointer;
   margin-top: -25px;
   position: absolute;
-  top: 50%;
+  top: 60%;
   z-index: 9;
 }
 .nivo-prevNav {
@@ -176,7 +176,7 @@ Default Theme
 }
 .nivo-box img { display:block; }
 .nivo-caption {
-  position:absolute;
+  position: static;
     left:0; 
     top:0;  
     color:#fff;
