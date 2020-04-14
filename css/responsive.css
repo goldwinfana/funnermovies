@@ -2,6 +2,12 @@
   .work-right-text {
     padding: 150px 150px;
   }
+  .slider-area {
+    top: 12%;
+  }
+  .about-area {
+    margin-top: 2%;
+  }
 }
 
 /* Normal desktop :992px. */
@@ -17,6 +23,12 @@
     font-size: 18px;
     line-height: 28px;
   }
+  .slider-area {
+    top: 15%;
+  }
+  .about-area {
+    margin-top: 3%;
+  }
 
 }
 
@@ -26,6 +38,9 @@
   .main-menu ul.navbar-nav li {
     display: inline-block;
     padding: 0 8px;
+  }
+  .sidenav {
+    display: none;
   }
   .layer-1-1 h2 {
     font-size: 24px;
@@ -118,10 +133,28 @@
   }
   .about1 {
     width: 100%;
+    border: none;
+    top: 20px;
   }
   .about2 {
     width: 100%;
   }
+  .tab-menu ul.nav li{
+    width: 30%;
+  }
+  .career-header{
+    display: block;
+  }
+  .slider-area {
+  top: 12%;
+}
+.about-area {
+  margin-top: 2%;
+}
+.what-we-do h4.check-title a {
+  font-size: unset;
+}
+ 
 }
 
 /* small mobile :320px. */
@@ -129,16 +162,47 @@
 @media (max-width: 767px) {
 
   .header-area {
-    height: 70px !important;
-    background: cadetblue;
+    height: auto !important;
+    background: #CCCCCC;
+    position: absolute;
+    top: 0;
+    left: 2%;
+    right: 2%;
+    z-index: 9;
+    box-shadow: rgb(183, 183, 183) 0px 1px 3px;
+    /* margin-top: -45px; */
+    background: rgb(204, 204, 204);
+    padding: 38px 0px 2px;
+    border-radius: 18px;
+    overflow: hidden;
   }
+  .header-area .container {
+    height: 60px;
+  }
+  .bs-example-navbar-collapse-1{
+    position: fixed;
+    width: 100%;
+    text-align: center;
+  }
+  .li-navbar li{
+    border-bottom-color: grey;
+    border-bottom-style: solid;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+ 
+
+  .bs-example-navbar-collapse-1 li a:hover{
+   color: greenyellow;
+  }
+
   .navbar-header a.navbar-brand, .stick .navbar-header a.navbar-brand {
     display: inline-block;
     height: 60px  !important;
     padding: 9px 0;
   }
   .navbar-default .navbar-toggle, .stick .navbar-default .navbar-toggle {
-    padding: 15px 0;
+    padding: 10px 0;
   }
   .nav.navbar-nav.navbar-right, .stick .nav.navbar-nav.navbar-right {
     background-color: #252525;
@@ -166,9 +230,9 @@
     padding: 0;
   }
 
-  .slider-area {
+  /* .slider-area {
     margin-top: 60px;
-  }
+  } */
 
   .slider-content h2 {
     font-size: 18px !important;
@@ -183,7 +247,7 @@
     padding: 8px 15px;
   }
   .section-headline h2 {
-    font-size: 30px;
+    font-size: 20px;
   }
   .well-middle .single-well {
     margin-top: 30px;
@@ -280,6 +344,8 @@
   }
   .about1 {
     width: 100%;
+    border: none;
+    top: 20px;
   }
   .about2 {
     width: 100%;
@@ -287,6 +353,41 @@
   .company-logo {
     display: none;
   }
+  .tab-menu ul.nav li{
+    font-size: small;
+  }
+  .tab-menu ul.nav.last li{
+    font-size: 70%;
+  }
+  .col-md-13,  .custom-content{
+    display: block;
+  }
+  h3{
+    font-size: 100%;
+  }
+  h4{
+    font-size: 20px;
+  }
+  .career-img{
+    text-align: center;
+    width: unset;
+  }
+  p{
+    font-size: 80%;
+  }
+  h6{
+    font-size: smaller;
+  }
+  .slider-area {
+    top: 18%;
+  }
+  .about-area {
+    margin-top: 2%;
+  }
+  div.about2 img{
+    width: 50%;
+  }
+  
 }
 
 /* Large Mobile :480px. */
@@ -317,11 +418,85 @@
   }
   .about1 {
     width: 100%;
+    border: none;
+    top: 20px;
   }
   .about2 {
     width: 100%;
   }
   .company-logo {
     display: none;
+  }
+  .tab-menu ul.nav li{
+    font-size: small;
+  }
+  .career-header{
+    display: block;
+  }
+  .custom-content{
+    display: block;
+  }
+  .slider-area {
+    top: 17%;
+  }
+  .about-area {
+    margin-top: 2%;
+  }
+  
+ 
+}
+
+@media only screen and (min-width: 150px) and (max-width: 349px) {
+  .slider-area {
+    top: 13%;
+  }
+}
+@media only screen and (min-width: 350px) and (max-width: 449px) {
+  .slider-area {
+    top: 14%;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 520px) {
+  .slider-area {
+    top: 15%;
+  }
+}
+
+@media only screen and (min-width: 150px) and (max-width: 520px) {
+  .apps-contant{
+    display: block;
+    text-align: center;
+  }
+  .apps-contant2{
+    display: none;
+  }
+  h4{
+    font-size: 20px;
+  }
+
+  .about-area {
+    margin-top: 2%;
+  }
+  .header-area {
+    height: auto !important;
+    background: #CCCCCC;
+    position: absolute;
+    top: 0;
+    left: 2%;
+    right: 2%;
+    z-index: 9;
+    box-shadow: rgb(183, 183, 183) 0px 1px 3px;
+    margin-top: -45px;
+    background: rgb(204, 204, 204);
+    padding: 38px 0px 2px;
+    border-radius: 18px;
+    overflow: hidden;
+  }
+  .navbar-default .navbar-toggle.collapsed.img, .stick .navbar-default .navbar-toggle.collapsed.img{
+    width: 20%;
+  }
+
+  div.custom-content img{
+    width: -webkit-fill-available;
   }
 }
