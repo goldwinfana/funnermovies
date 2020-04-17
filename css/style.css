@@ -1160,6 +1160,258 @@ ul.li-navbar i:hover{
   width: 100%;
 }
 
+<<<<<<< HEAD
+=======
+/*----------------------------------------*/
+
+/* 11. Pricing Area
+/*----------------------------------------*/
+
+.pricing-area {
+  background: rgba(0, 0, 0, 0.02) none repeat scroll 0 0;
+}
+
+.pri_table_list {
+  border: 1px solid #ccc;
+  text-align: center;
+  transition: all 0.4s ease 0s;
+  background: #fff;
+  border-radius: 10px;
+  padding: inherit;
+  display: inline-grid;
+}
+span.border-line {
+    border-bottom-style: solid;
+    border-color: lightgray;
+    margin: 5px;
+}
+
+
+.pri_table_list h3 span {
+  font-size: 16px;
+}
+
+.pri_table_list ol li {
+  border-bottom: 1px solid #ccc;
+  color: #666;
+  padding: 12px 15px;
+  position: relative;
+  text-align: left;
+}
+
+.pri_table_list li.check.cross::after {
+  content: "\f00d";
+  font-family: fontawesome;
+  font-size: 14px;
+  position: absolute;
+  right: 50px;
+  top: 12px;
+  color: indianred;
+}
+
+.pri_table_list li.check::after {
+  content: "\f00c";
+  font-family: fontawesome;
+  font-size: 14px;
+  position: absolute;
+  right: 50px;
+  top: 12px;
+  color: #3EC1D5;
+}
+
+.pri_table_list button {
+  background: #444 none repeat scroll 0 0;
+  border: 1px solid #444;
+  color: #fff;
+  margin-bottom: 25px;
+  padding: 10px 35px;
+  text-transform: uppercase;
+  transition: all 0.4s ease 0s;
+  border-radius: 30px;
+}
+
+.pri_table_list>h3 {
+  color: #333;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 25px;
+  padding: 30px 0 20px;
+  text-transform: uppercase;
+  transition: all 0.4s ease 0s;
+}
+
+.pri_table_list ol {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0 0 25px;
+}
+
+.pri_table_list.active {
+  transition: all 0.4s ease 0s;
+  position: relative;
+  overflow: hidden;
+}
+
+.saleon {
+  background: #3EC1D5 none repeat scroll 0 0;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  left: -26px;
+  padding: 2px 25px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 16px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+}
+
+.pri_table_list>button:hover {
+  background-color: #fff;
+  border: 1px solid #333;
+  color: #333;
+}
+
+.active>h3 {
+  /* background: #f5f5f5 none repeat scroll 0 0; */
+  color: #333;
+  transition: all 0.4s ease 0s;
+}
+
+.active>button {
+  background: #3EC1D5 none repeat scroll 0 0;
+  border: 1px solid #3EC1D5;
+  color: #fff;
+  transition: 0.4s;
+}
+
+.active>button:hover {
+  background: #333 none repeat scroll 0 0;
+  border: 1px solid #333;
+  color: #fff;
+  transition: 0.4s;
+}
+
+/*----------------------------------------
+ 12.Testimonial Area Css
+----------------------------------------*/
+
+.testimonials-area {
+  background: rgba(0, 0, 0, 0) url("../img/background/slider1.jpg") no-repeat fixed center top / cover;
+  height: auto;
+  width: 100%;
+}
+
+.testi-inner {
+  position: relative;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.testi-overly {
+  background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.quate {
+  border: 1px dotted #fff;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-block;
+  font-size: 24px;
+  height: 70px;
+  line-height: 70px;
+  width: 70px;
+}
+
+.quate:hover {
+  color: #fff;
+}
+
+.testi-img img {
+  border: 1px dotted rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
+  height: 80px;
+  margin: 0 auto;
+  padding: 5px;
+  transition: background 0.6s ease-out 0s;
+  width: 80px !important;
+}
+
+.testi-text p {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5em;
+  margin: 20px 0;
+  letter-spacing: 1px;
+}
+
+.testi-text h6 {
+  color: #fff;
+  font-size: 20px;
+}
+
+.testimonial-carousel.owl-carousel.owl-theme .owl-controls .owl-dots div.owl-dot>span {
+  background: #fff none repeat scroll 0 0;
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  -moz-transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  -ms-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.testimonial-carousel.owl-carousel.owl-theme .owl-controls .owl-dots {
+  bottom: -30px;
+  display: block;
+  left: 50%;
+  margin-left: -20px;
+  position: absolute;
+}
+
+.testimonial-content {
+  margin-bottom: 15px;
+}
+
+.testimonial-carousel.owl-carousel.owl-theme .owl-controls .owl-dots div.owl-dot {
+  display: inline-block;
+  margin: 0 3px;
+}
+
+.testimonial-carousel.owl-carousel.owl-theme .owl-controls .owl-dots div.owl-dot.active span {
+  background: #3EC1D5;
+}
+
+.testi-text.text-center>h6 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.guest-rev {
+  color: #ddd;
+  font-size: 16px;
+}
+
+.guest-rev>a {
+  color: #3EC1D5;
+  font-size: 14px;
+}
+
+>>>>>>> 7be9b3491c94f5ae59622a113fb3c2b7bc623065
 /*--------------------------------*/
 
 /*  13.Blog Area
@@ -2053,6 +2305,7 @@ span.email-notes {
 .custom-content {
   margin-top: 10px;
 }
+<<<<<<< HEAD
 
 .career-img{
   margin: 2%;
@@ -2084,6 +2337,39 @@ div.apps-desc span {
 
 div.essentials{
 
+=======
+
+.career-img{
+  margin: 2%;
+  margin-top: 0;
+  width: 50%;
+}
+.apps-contant{
+  display: none;
+}
+.apps-contant2{
+  display: block;
+}
+.slider-area {
+  top: 16%;
+}
+.about-area {
+  margin-top: 4%;
+}
+
+div.apps-desc {
+  display: table;
+  width: 100%;
+  table-layout: fixed;    /* For cells of equal size */
+}
+div.apps-desc span {
+  display: table-cell;
+  text-align: center;
+}
+
+div.essentials{
+
+>>>>>>> 7be9b3491c94f5ae59622a113fb3c2b7bc623065
     margin-bottom: 10px;
     padding: 20px 6px 20px;
     border-radius: 18px;

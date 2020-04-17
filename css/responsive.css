@@ -183,6 +183,7 @@
     position: fixed;
     width: 100%;
     text-align: center;
+<<<<<<< HEAD
   }
   .li-navbar li{
     border-bottom-color: grey;
@@ -190,6 +191,15 @@
     margin-left: 5%;
     margin-right: 5%;
   }
+=======
+  }
+  .li-navbar li{
+    border-bottom-color: grey;
+    border-bottom-style: solid;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+>>>>>>> 7be9b3491c94f5ae59622a113fb3c2b7bc623065
  
 
   .bs-example-navbar-collapse-1 li a:hover{
@@ -440,7 +450,11 @@
     top: 17%;
   }
   .about-area {
+<<<<<<< HEAD
     margin-top: 5%;
+=======
+    margin-top: 2%;
+>>>>>>> 7be9b3491c94f5ae59622a113fb3c2b7bc623065
   }
   
  
@@ -462,6 +476,7 @@
   }
 }
 
+<<<<<<< HEAD
 @media only screen and (min-width: 541px) and (max-width: 899px) {
   .contact-address {
     width: 50%;
@@ -487,6 +502,8 @@
   }
 }
 
+=======
+>>>>>>> 7be9b3491c94f5ae59622a113fb3c2b7bc623065
 @media only screen and (min-width: 150px) and (max-width: 520px) {
   .apps-contant{
     display: block;
