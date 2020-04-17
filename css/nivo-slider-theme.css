@@ -111,6 +111,7 @@ Supports Thumbs: true
   text-indent: inherit;
   vertical-align: top;
   width: 20px;
+  background: black;
 }
 
 .nivo-controlNav a:hover, .nivo-controlNav a.active {
@@ -351,7 +352,7 @@ preview-2
 }
 
 .preview-2 .nivo-directionNav a.nivo-prevNav::before {
-  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  background: #3ec1d5 none repeat scroll 0 0;
   color: #ffffff;
   content: "";
   cursor: pointer;
@@ -376,7 +377,7 @@ preview-2
 }
 
 .preview-2 .nivo-directionNav a.nivo-nextNav::before {
-  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  background: #3ec1d5 none repeat scroll 0 0;
   border: 1px solid #fff;
   border-radius: 50%;
   color: #ffffff;

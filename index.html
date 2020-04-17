@@ -9,7 +9,9 @@
 
   <!-- Favicons -->
   <link href="images/APS_logo-01.png" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="img/apple-touch-icon" rel="apple-touch-icon">
+
+
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
@@ -52,24 +54,48 @@
             <nav class="navbar navbar-default">
               <!-- Brand and toggle get grouped for better mobile display -->
               <div class="navbar-header">
-                <img class="navbar-toggle collapsed" data-toggle="collapse" data-target=".bs-example-navbar-collapse-1" src="APS/Logo-01.png" width="12%" height="10%" style="float: left;">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".bs-example-navbar-collapse-1" aria-expanded="false">
-										<span class="sr-only">Toggle navigation</span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
+                <a href="#"><img class="navbar-toggle collapsed img" src="APS/Logo-01.png" ></a>
+                <button type="button" title="Menu" class="navbar-toggle collapsed" onclick="openNav()" aria-expanded="false">
+                    <span style="font-size:30px;cursor:pointer;color: yellowgreen;">&#9776;</span>
 									</button>
                 <!-- Brand -->
                 <a class="navbar-brand page-scroll sticky-logo" href="index.html">
-                 
-                  <!-- <h1><span>e</span>Business</h1> -->
-                  <!-- Uncomment below if you prefer to use an image logo -->
-                  <!-- <img src="img/logo.png" alt="" title=""> -->
+                  <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <ul class="li-navbar">
+                      <li class="active">
+                        <a onclick="closeNav()" class="page-scroll" href="#home">Home
+                          <i class="fa fa-home"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a onclick="closeNav()" class="page-scroll" href="#about">About
+                          <i class="fa fa-info-circle"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a onclick="closeNav()" class="page-scroll" href="#services">Services
+                          <i class="fa fa-cogs"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a onclick="closeNav()" class="page-scroll" href="#careers">Careers
+                          <i class="fa fa-graduation-cap"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a onclick="closeNav()" class="page-scroll" href="#contact">Contact
+                          <i class="fa fa-address-book-o"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
 								</a>
               </div>
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
-                <img class="company-logo" src="APS/Logo-01.png" width="12%" height="10%" style="margin: 2%;margin-left: 0;">
+               <a href="#"><img class="company-logo" src="APS/Logo-01.png" width="12%" height="10%" style="margin: 2%;margin-left: 0;"></a>
                 <ul class="nav navbar-nav navbar-right">
                   <li class="active">
                     <a class="page-scroll" href="#home">Home</a>
@@ -79,9 +105,6 @@
                   </li>
                   <li>
                     <a class="page-scroll" href="#services">Services</a>
-                  </li>
-                  <li>
-                    <a class="page-scroll" href="#csi">CSI</a>
                   </li>
                   <li>
                     <a class="page-scroll" href="#careers">Careers</a>
@@ -106,117 +129,17 @@
   <div id="home" class="slider-area">
     <div class="bend niceties preview-2">
       <div id="ensign-nivoslider" class="slides">
-        <img src="images/new-java.jpg" height="300px" alt="" title="#slider-direction-1" />
-        <img src="images/new-img.jpg" alt="" title="#slider-direction-2" />
-        <img src="images/new-sd.jpg" alt="" title="#slider-direction-3" />
-        <img src="images/new-cust.png" alt="" title="#slider-direction-4" />
+        <img src="img/banner.jpg" height="300px" alt="" title="#slider-direction-1" />
+        <img src="img/careers.jpg" alt="" title="#slider-direction-2" />
+        <img src="img/contacts.jpg" alt="" title="#slider-direction-3" />
       </div>
 
-      <!-- direction 1 -->
-      <div id="slider-direction-1" class="slider-direction slider-one">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="slider-content">
-                <!-- layer 1 -->
-                <div class="layer-1-1 hidden-xs wow slideInDown" data-wow-duration="2s" data-wow-delay=".2s">
-                  <h2 class="title1">Your Business Needs New Ideas? </h2>
-                </div>
-                <!-- layer 2 -->
-                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                  <h1 class="title2">Let Us Bring You Effective Solutions</h1>
-                </div>
-                <!-- layer 3 -->
-                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
-                  <a class="ready-btn page-scroll" href="#about">Learn More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- direction 2 -->
-      <div id="slider-direction-2" class="slider-direction slider-two">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="slider-content text-center">
-                <!-- layer 1 -->
-                <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <h2 class="title1">We Produce Results </h2>
-                </div>
-                <!-- layer 2 -->
-                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                  <h1 class="title2">And Provide The Best Products</h1>
-                </div>
-                <!-- layer 3 -->
-                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
-                  <a class="ready-btn page-scroll" href="#about">Learn More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- direction 3 -->
-      <div id="slider-direction-3" class="slider-direction slider-two">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="slider-content">
-                <!-- layer 1 -->
-                <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <h2 class="title1">We Care </h2>
-                </div>
-                <!-- layer 2 -->
-                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                  <h1 class="title2">We Are Making A Difference For Tommorrow </h1>
-                </div>
-                <!-- layer 3 -->
-                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
-                  <a class="ready-btn page-scroll" href="#about">Learn More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-        <!-- direction 4 -->
-        <div id="slider-direction-2" class="slider-direction slider-two">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="slider-content text-center">
-                  <!-- layer 1 -->
-                  <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                    <h2 class="title1">Make A Career Change</h2>
-                  </div>
-                  <!-- layer 2 -->
-                  <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                    <h1 class="title2">Take It To The Next Level</h1>
-                  </div>
-                  <!-- layer 3 -->
-                  <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                    <a class="ready-btn right-btn page-scroll" href="#services">See Services</a>
-                    <a class="ready-btn page-scroll" href="#about">Learn More</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
     </div>
   </div>
   <!-- End Slider Area -->
 
   <!-- Start About area -->
-  <div id="about" class="about-area area-padding">
+  <div style="background-color: #f9f9f9;" id="about" class="about-area area-padding">
     <div class="container">
       <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12">
@@ -225,251 +148,10 @@
           </div>
         </div>
       </div>
+      
       <div class="row">
-        
-        <!-- what we do -->
-      <div class="col-md-6 col-sm-6 col-xs-12 about1">
-                <div class="faq-details">
-                  <div class="panel-group" id="accordion">
-                    <div  style="text-align: center">
-                      <h4 class="sec-head">What We Do</h4>
-                    </div>
-                    <!-- Panel Default -->
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4 class="check-title">
-                            <a data-toggle="collapse" class="active" data-parent="#accordion" href="#we-do-1">
-                                                      <span class="acc-icons"></span>IT Policies and Procedures
-                            </a>
-                          </h4>
-                        
-                      </div>
-                      <div id="we-do-1" class="panel-collapse collapse in">
-                        <div class="panel-body">
-                            
-                        </div>
-                      </div>
-                    </div>
-                    <!-- End Panel Default -->
-                    <!-- Panel Default -->
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4 class="check-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#we-do-2">
-                                                      <span class="acc-icons"></span> IT Strategic Planning
-                            </a>
-                          </h4>
-                      </div>
-                      <div id="we-do-2" class="panel-collapse collapse">
-                        <div class="panel-body">
-                          <p>
-                            Redug Lefes dolor sit amet, consectetur adipisicing elit. Aspernatur, tempore, commodi quas mollitia dolore magnam quidem repellat, culpa voluptates laboriosam maiores alias accusamus recusandae vero aperiam sint nulla beatae eos.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- End Panel Default -->
-                    <!-- Panel Default -->
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4 class="check-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#we-do-3">
-                                                      <span class="acc-icons"></span>ICT Governance
-                            </a>
-                          </h4>
-                      </div>
-                      <div id="we-do-3" class="panel-collapse collapse ">
-                        <div class="panel-body">
-                          <p>
-                            Redug Lefes dolor sit amet, consectetur adipisicing elit. Aspernatur, tempore, commodi quas mollitia dolore magnam quidem repellat, culpa voluptates laboriosam maiores alias accusamus recusandae vero aperiam sint nulla beatae eos.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- End Panel Default -->
-                    <!-- Panel Default -->
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4 class="check-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#we-do-4">
-                                                      <span class="acc-icons"></span>IT risk Assessments
-                            </a>
-                          </h4>
-                      </div>
-                      <div id="we-do-4" class="panel-collapse collapse">
-                        <div class="panel-body">
-                          <p>
-                            Redug Lefes dolor sit amet, consectetur adipisicing elit. Aspernatur, tempore, commodi quas mollitia dolore magnam quidem repellat, culpa voluptates laboriosam maiores alias accusamus recusandae vero aperiam sint nulla beatae eos.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- End Panel Default -->
-                    <!-- Panel Default -->
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4 class="check-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#we-do-5">
-                                                      <span class="acc-icons"></span>Solution Selection
-                            </a>
-                          </h4>
-                      </div>
-                      <div id="we-do-5" class="panel-collapse collapse">
-                        <div class="panel-body">
-                          <p>
-                            Redug Lefes dolor sit amet, consectetur adipisicing elit. Aspernatur, tempore, commodi quas mollitia dolore magnam quidem repellat, culpa voluptates laboriosam maiores alias accusamus recusandae vero aperiam sint nulla beatae eos.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- End Panel Default -->
-                    <!-- Panel Default -->
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4 class="check-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#we-do-6">
-                                                      <span class="acc-icons"></span>Android application development
-                            </a>
-                          </h4>
-                      </div>
-                      <div id="we-do-6" class="panel-collapse collapse">
-                        <div class="panel-body">
-                          <p>
-                            Redug Lefes dolor sit amet, consectetur adipisicing elit. Aspernatur, tempore, commodi quas mollitia dolore magnam quidem repellat, culpa voluptates laboriosam maiores alias accusamus recusandae vero aperiam sint nulla beatae eos.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- End Panel Default -->
-                    <!-- Panel Default -->
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4 class="check-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#we-do-7">
-                                                      <span class="acc-icons"></span>iOS application developmentIT Strategic Planning
-                            </a>
-                          </h4>
-                      </div>
-                      <div id="we-do-7" class="panel-collapse collapse">
-                        <div class="panel-body">
-                          <p>
-                            Redug Lefes dolor sit amet, consectetur adipisicing elit. Aspernatur, tempore, commodi quas mollitia dolore magnam quidem repellat, culpa voluptates laboriosam maiores alias accusamus recusandae vero aperiam sint nulla beatae eos.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- End Panel Default -->
-                    <!-- Panel Default -->
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4 class="check-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#we-do-8">
-                                                      <span class="acc-icons"></span>Windows Phone application development
-                            </a>
-                          </h4>
-                      </div>
-                      <div id="we-do-8" class="panel-collapse collapse">
-                        <div class="panel-body">
-                          <p>
-                            Redug Lefes dolor sit amet, consectetur adipisicing elit. Aspernatur, tempore, commodi quas mollitia dolore magnam quidem repellat, culpa voluptates laboriosam maiores alias accusamus recusandae vero aperiam sint nulla beatae eos.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- End Panel Default -->
-                    <!-- Panel Default -->
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4 class="check-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#we-do-9">
-                                                      <span class="acc-icons"></span>Conceptual Model development
-                            </a>
-                          </h4>
-                      </div>
-                      <div id="we-do-9" class="panel-collapse collapse">
-                        <div class="panel-body">
-                          <p>
-                            Redug Lefes dolor sit amet, consectetur adipisicing elit. Aspernatur, tempore, commodi quas mollitia dolore magnam quidem repellat, culpa voluptates laboriosam maiores alias accusamus recusandae vero aperiam sint nulla beatae eos.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- End Panel Default -->
-                    <!-- Panel Default -->
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4 class="check-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#we-do-10">
-                                                      <span class="acc-icons"></span>Prototype development
-                            </a>
-                          </h4>
-                      </div>
-                      <div id="we-do-10" class="panel-collapse collapse">
-                        <div class="panel-body">
-                          <p>
-                            Redug Lefes dolor sit amet, consectetur adipisicing elit. Aspernatur, tempore, commodi quas mollitia dolore magnam quidem repellat, culpa voluptates laboriosam maiores alias accusamus recusandae vero aperiam sint nulla beatae eos.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- End Panel Default -->
-                    <!-- Panel Default -->
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4 class="check-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#we-do-11">
-                                                      <span class="acc-icons"></span>User experience Planning
-                            </a>
-                          </h4>
-                      </div>
-                      <div id="we-do-11" class="panel-collapse collapse">
-                        <div class="panel-body">
-                          <p>
-                            Redug Lefes dolor sit amet, consectetur adipisicing elit. Aspernatur, tempore, commodi quas mollitia dolore magnam quidem repellat, culpa voluptates laboriosam maiores alias accusamus recusandae vero aperiam sint nulla beatae eos.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- End Panel Default -->
-                    <!-- Panel Default -->
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4 class="check-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#we-do-12">
-                                                      <span class="acc-icons"></span>Application Analytics
-                            </a>
-                          </h4>
-                      </div>
-                      <div id="we-do-12" class="panel-collapse collapse">
-                        <div class="panel-body">
-                          <p>
-                            Redug Lefes dolor sit amet, consectetur adipisicing elit. Aspernatur, tempore, commodi quas mollitia dolore magnam quidem repellat, culpa voluptates laboriosam maiores alias accusamus recusandae vero aperiam sint nulla beatae eos.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-           
-<!--  -->
-<!--  -->
-
-            </div>
-          </div>
-        </div>
-               <!--end what we do -->
-        <!-- single-well end-->
         <div class="col-md-6 col-sm-6 col-xs-12 about2" >
-          <div class="well-middle">
-            <div class="single-well">
-              <a href="#">
-                <img src="APS/Logo-01.png" style="background: cadetblue">
-              </a>
+              <img src="APS/Logo-01.png" style="margin-right:10px" width="200" height="200" align="left">
               <p>
 
                 African Proficient Software, previously trading as Leverage Point, is a software development company 
@@ -486,9 +168,6 @@
                 Our approach is guided and driven by the following strengths:
              </p>
               
-
-
-
              <!-- start for about tab -->
            
               <div class="tab-menu">
@@ -509,9 +188,8 @@
                   <div class="tab-inner">
                     <div class="event-content head-team">
                       <a >
-                        <img src="images/focus_creative.png" alt="">
+                        <img src="images/focus_creative.png" alt="" align="left">
                         </a>
-                      <h4>Focused Creativity</h4>
                       <p>
                         Together we will explore creative options you would not have envisaged in your day to day operations.
                          We then evaluate those options based on your goals not subjective to trendy styles. We will take
@@ -527,7 +205,7 @@
                   <div class="tab-inner">
                     <div class="event-content head-team">
                       <a >
-                        <img src="images/innovation.jpg" width="200" height="80" alt="">
+                        <img src="images/innovate.png" alt="" align="left">
                         </a>
                       <!-- <h4>Innovation</h4> -->
                       <p>
@@ -544,7 +222,7 @@
                   <div class="tab-inner">
                     <div class="event-content head-team">
                       <a >
-                        <img src="images/win_strategy.png"  alt="">
+                        <img src="images/win_strategy.png"  alt="" align="left">
                         </a>
                       <!-- <h4>Winning Strategy</h4> -->
                       <p>
@@ -563,12 +241,167 @@
 
 
             </div>
+          
+        <!-- end of what we do -->
+      <div class="col-md-6 col-sm-6 col-xs-12 about1">
+                <div class="what-we-do">
+                  <div class="panel-group" id="accordion">
+                    <div  style="text-align: center">
+                      <h4 class="sec-head" style="color: yellowgreen;">What We Do</h4>
+                    </div>
+                    <!-- Panel Default -->
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="check-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#we-do-1">
+                              <i class="fa fa-cog fa-spin fa-2x fa-fw" aria-hidden="true"></i>IT Policies and Procedures
+                            </a>
+                          </h4>
+                        
+                      </div>
+                      <div id="we-do-1" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Panel Default -->
+                    <!-- Panel Default -->
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="check-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#we-do-2">
+                              <i class="fa fa-cog fa-spin fa-2x fa-fw" aria-hidden="true"></i> IT Strategic Planning
+                            </a>
+                          </h4>
+                      </div>
+                     
+                    <!-- End Panel Default -->
+                    <!-- Panel Default -->
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="check-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#we-do-3">
+                              <i class="fa fa-cog fa-spin fa-2x fa-fw" aria-hidden="true"></i>ICT Governance
+                            </a>
+                          </h4>
+                      </div>
+                     
+                    <!-- End Panel Default -->
+                    <!-- Panel Default -->
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="check-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#we-do-4">
+                              <i class="fa fa-cog fa-spin fa-2x fa-fw" aria-hidden="true"></i>IT risk Assessments
+                            </a>
+                          </h4>
+                      </div>
+                    </div>
+                    <!-- End Panel Default -->
+                    <!-- Panel Default -->
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="check-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#we-do-5">
+                              <i class="fa fa-cog fa-spin fa-2x fa-fw" aria-hidden="true"></i>Solution Selection
+                            </a>
+                          </h4>
+                      </div>
+                    </div>
+
+                    <!-- End Panel Default -->
+                    <!-- Panel Default -->
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="check-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#we-do-6">
+                              <i class="fa fa-cog fa-spin fa-2x fa-fw" aria-hidden="true"></i>Android application development
+                            </a>
+                          </h4>
+                      </div>
+                    </div>
+
+                    <!-- End Panel Default -->
+                    <!-- Panel Default -->
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="check-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#we-do-7">
+                              <i class="fa fa-cog fa-spin fa-2x fa-fw" aria-hidden="true"></i>iOS application development
+                            </a>
+                          </h4>
+                      </div>
+                    </div>
+
+                    <!-- End Panel Default -->
+                    <!-- Panel Default -->
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="check-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#we-do-8">
+                              <i class="fa fa-cog fa-spin fa-2x fa-fw" aria-hidden="true"></i>Windows Phone application development
+                            </a>
+                          </h4>
+                      </div>
+                    </div>
+
+                    <!-- End Panel Default -->
+                    <!-- Panel Default -->
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="check-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#we-do-9">
+                              <i class="fa fa-cog fa-spin fa-2x fa-fw" aria-hidden="true"></i>Conceptual Model development
+                            </a>
+                          </h4>
+                      </div>
+                    </div>
+
+                    <!-- End Panel Default -->
+                    <!-- Panel Default -->
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="check-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#we-do-10">
+                              <i class="fa fa-cog fa-spin fa-2x fa-fw" aria-hidden="true"></i>Prototype development
+                            </a>
+                          </h4>
+                      </div>
+                    </div>
+
+                    <!-- End Panel Default -->
+                    <!-- Panel Default -->
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="check-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#we-do-11">
+                              <i class="fa fa-cog fa-spin fa-2x fa-fw" aria-hidden="true"></i>User experience Planning
+                            </a>
+                          </h4>
+                      </div>
+                    </div>
+
+                    <!-- End Panel Default -->
+                    <!-- Panel Default -->
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="check-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#we-do-12">
+                              <i class="fa fa-cog fa-spin fa-2x fa-fw" aria-hidden="true"></i>Application Analytics
+                            </a>
+                          </h4>
+                      </div>
+                    </div>
+
+            </div>
           </div>
         </div>
+  
+      </div>
+    </div><br/>
         <!-- End col-->
       </div>
-    </div>
-  </div>
   <!-- End About area -->
 
   <!-- Start Service area -->
@@ -581,15 +414,29 @@
           </div>
         </div>
       </div>
-      <div class="row text-center">
+         
+
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="essentials">
+              We have energetic and intelligent staff with a passion for empowering businesses through the development
+              and use of information and communications technologies. Our staff possess the skills and knowledge
+                necessary to visualize the ICT needs of organizations and to meet those needs with innovative and 
+                intelligent solutions.
+            </div>
+        </div>
+      </div>
+        
+     
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
         <div class="services-contents">
           <!-- Start Left services -->
           <!-- End Left services -->
-         
 
             <div class="tab-menu">
               <!-- Nav tabs -->
-              <ul class="nav nav-tabs" role="tablist">
+              <ul class="nav nav-tabs last" role="tablist">
                 <li class="active">
                   <a href="#p-view-custom" role="tab" data-toggle="tab">Custom Software Development</a>
                 </li>
@@ -605,18 +452,16 @@
               <div class="tab-pane active" id="p-view-custom">
                 <div class="tab-inner">
                   <div class="event-content head-team">
-                  <div style="display: flex;">
-                    <span style="margin: 2%;margin-left: 0%;">
-                      <img src="images/custom.jpg" width="800" height="600">
-                    </span>
-                    <span>
-                    <h3 style="margin-top: 2%;color: yellowgreen;">Technologies and Development process</h3>
+                  <div class="custom-content">
+                    <img src="images/custom.jpg" style="margin-right: 2%;" width="200" height="200" align="left">
+                 
+                    <h3 style="color: yellowgreen;">Technologies and Development process</h3>
                     <p>
                     We have more than 5 years of experience in custom software development. Our expertise entails of a comprehensive set
                     of open-source and relevant technologies that enable us to carry out the most complex and challenging development 
                     projects to the customer’s satisfactory requirements, expectations and preferences.
                     </p>
-                  </span>
+                  
                 </div>
                     <h3 style="color: yellowgreen;">Our Custom Software Development Methodologies</h3>
                     <p>
@@ -634,11 +479,8 @@
               <div class="tab-pane" id="p-view-advisory">
                 <div class="tab-inner">
                   <div class="event-content head-team">
-                    <div style="display: flex;">
-                      <span style="margin: 2%;margin-left: 0%;">
-                        <img src="images/android.png">
-                      </span>
-                      <span>
+                    <div class="custom-content">
+                      <img src="images/adv.png" style="margin-right: 2%;" width="200" height="200" align="left">
                       <p>
                         The right technology implemented properly, correctly managed and monitored, often lead to visible 
                         advantages and gains in business efficiency and growth. It is crucial to acquire good and sound 
@@ -649,7 +491,6 @@
                         We have a team of experts to work with clients in analysing issues within the client’s business that arise 
                         technological aspects of business.
                       </p>
-                      </span>
                     </div>
                     
                     <h3 style="color: yellowgreen;">We offer IT advisory in the following fields:</h3>
@@ -773,11 +614,8 @@
               <div class="tab-pane" id="p-view-mobile">
                 <div class="tab-inner">
                   <div class="event-content head-team">
-                    <div style="display: flex;">
-                      <span style="margin: 2%;margin-left: 0%;">
-                        <img src="images/Mobile-App.png" width="100" height="100">
-                      </span>
-                      <span>
+                    <div class="custom-content">
+                      <img src="images/Mobile-App.png" style="margin-right: 2%;" width="200" height="200" align="left">
                       <p>
                         African Proficient Software has more than 5 years of experience in mobile application development. 
                         With our constant up to date technology.
@@ -785,89 +623,101 @@
                       <p> 
                         We develop innovative and efficient mobile technologies to assist your business reach beyond and above desktop computers and laptops.
                        </p>
-                     </div>
+                     </div> <br/><br/>
                      <h3 style="color: yellowgreen;"> We offer expertise in the following services:</h3>
 
                      <!-- advisory keys -->
-                    <div>
-                      <div  style="background-color: greenyellow;" class="panel panel-default customs"  data-toggle="collapse" data-parent="#accordion" href="#mobile-1">
+                   
+                    
+                      <div   class="panel panel-default customs"  data-toggle="collapse" data-parent="#accordion" href="#mobile-1">
                         <div class="panel-heading">
                           <h6 class="check-title" >
-                              <a >
-                                Android Application Development<i style="float: right;font-size: xx-large;" class="fa fa-angle-right"></i>
-                              </a>
+                            <a class="apps-contant">
+                              <img src="images/android_device.png" width="60" height="30">
+                              <i style="float: right;font-size: xx-large;" class="fa fa-angle-right"></i>
+                            </a>
+
+                            <a class="apps-contant2">
+                              <div class="apps-desc">
+                                <span style="float: left;"><img src="images/android_device.png"  width="50" height="20"></span>
+                                <span style="width: 50%;">Android Application Development</span>
+                                <span class="fa fa-angle-right" style="float: right;font-size: xx-large;"></span>
+                            </div>
+                            </a>
                             </h6>
                         </div>
                         <div id="mobile-1" class="panel-collapse collapse">
                           <div class="panel-body" >
-                            <div style="display: flex;">
-                              <span style="margin: 2%;margin-left: 0%;">
-                                <img src="images/android_device.png" style="background: black;" width="250" height="150">
-                              </span>
-                              <span>
                               <p>
                                 APS’s approach to IT Policies and Procedures establishes the rules of conduct within an organization, 
                                 outlining the responsibilitiesof both employees and employers and also ensures that our client’s information 
                                 is kept safe. Having these policies and procedures enables organizations to have the power to protect any
                                  information that is disclosed to them by unauthorized access and purposes by unauthorized individuals.
                               </p>
-                             </div>
                           </div>
                         </div>
                       </div>
 
-                      <div  style="background-color: orange;" class="panel panel-default customs"  data-toggle="collapse" data-parent="#accordion" href="#mobile-2">
+                      <div class="panel panel-default customs"  data-toggle="collapse" data-parent="#accordion" href="#mobile-2">
                         <div class="panel-heading">
                           <h6 class="check-title" >
-                              <a >
-                                iOS Application Development (iPhone, iPad)<i style="float: right;font-size: xx-large;" class="fa fa-angle-right"></i>
-                              </a>
+                            <a class="apps-contant">
+                              <img src="images/apple_ios.png" width="50" height="30">
+                              <i style="float: right;font-size: xx-large;" class="fa fa-angle-right"></i>
+                            </a>
+                            
+                            <a  class="apps-contant2">
+                              <div class="apps-desc">
+                                <span style="float: left;"><img src="images/apple_ios.png"  width="50" height="20"></span>
+                                <span style="width: 50%;"> iOS Application Development(iPhone,iPad)</span>
+                                <span class="fa fa-angle-right" style="float: right;font-size: xx-large;"></span>
+                            </div>
+                            
+                            </a>
                             </h6>
                         </div>
                         <div id="mobile-2" class="panel-collapse collapse">
-                          <div class="panel-body" >
-                            <div style="display: flex;">
-                              <span style="margin: 2%;margin-left: 0%;">
-                                <img src="images/android_device.png" style="background: black;" width="250" height="150">
-                              </span>
-                              <span>
+                          <div class="panel-body">
                               <p>
                                 APS’s approach to IT Strategic Planning enables organizations to make decisions and implement solutions that support
                                  the overall strategic plan. We provide our clients with useful tools that guide day-to-day decisions, that also 
                                  evaluate progress and changing approaches when moving forward.
                               </p>
-                             </div>
                           </div>
                         </div>
                       </div>
 
-                      <div  style="background-color: lightseagreen;" class="panel panel-default customs"  data-toggle="collapse" data-parent="#accordion" href="#mobile-3">
+                      <div   class="panel panel-default customs"  data-toggle="collapse" data-parent="#accordion" href="#mobile-3">
                         <div class="panel-heading">
                           <h6 class="check-title" >
-                              <a >
-                                Windows Phone application<i style="float: right;font-size: xx-large;" class="fa fa-angle-right"></i>
-                              </a>
+                            <a class="apps-contant">
+                              <img src="images/wi1.png" width="60" height="20">
+                              <i style="float: right;font-size: xx-large;" class="fa fa-angle-right"></i>
+                            </a>
+                            
+                            <a  class="apps-contant2">
+                              <div class="apps-desc">
+                                <span style="float: left;"><img src="images/wi1.png"  width="60" height="20"></span>
+                                <span style="width: 50%;">Windows Phone Application</span>
+                                <span class="fa fa-angle-right" style="float: right;font-size: xx-large;"></span>
+                            </div>
+                           
+                            </a>
                             </h6>
                         </div>
                         <div id="mobile-3" class="panel-collapse collapse">
                           <div class="panel-body" >
-                            <div style="display: flex;">
-                              <span style="margin: 2%;margin-left: 0%;">
-                                <img src="images/android_device.png" style="background: black;" width="250" height="150">
-                              </span>
-                              <span>
                               <p>
                                 APS’s approach to ICT Governance ensures that the senior management of an organization retains control of , 
                                 and responsibility for, its IT operation. We tailor make ways and methods through which an organization can implement,
                                  manage and monitor ICT governance. We also provide guidelines and measures to effectively utilize IT resources and 
                                  processes within an organization.
                               </p>
-                             </div>
                           </div>
                         </div>
                       </div>
   
-                      
+                    </div>
                     </div>
                       <!-- end mobile keys -->
 
@@ -876,7 +726,7 @@
                         information and communications technologies. Our staff possess the skills and knowledge necessary to visualize the
                          ICT needs of organizations and to meet those needs with innovative and intelligent solutions.
                       </p>
-                      <h3 style="color: yellowgreen;">Our Mobile application development service plan comprises of:</h3>
+                      <h3 style="color: yellowgreen;font-size: 5vm;">Our Mobile application development service plan comprises of:</h3>
                       <p>
                         <ul>
                           <li>
@@ -898,90 +748,15 @@
                 </div>
               </div>
             </div>
+            </div>
           <!-- end of inner pannel -->
 
-
-
         </div>
       </div>
-    </div>
-  </div>
   <!-- End Service area -->
- <!-- Start csi Area -->
- <div id="csi" class="portfolio-area area-padding fix">
-   
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 col-sm-12 col-xs-12">
-        <div class="section-headline text-center">
-          <h2>Corporate Social Investment</h2>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4 col-sm-4 col-xs-12">
-        <div class="pri_table_list">
-          <span style="margin-left: 2%;margin-right: 2%;">
-            <img  src="images/valdezia.jpg" width="80%" height="150">
-          </span>
-         <br/>
-            <span>
-              Is atertiatry education fund which assists students from 
-              the improverished village of Valdezia in Limpopo, who then intend to give to
-              the community where they come from. The program helps in funding University 
-              tuition, accommodation costs and living allowance. African 
-              Proficient Group is a sponsor and partner of this organization which has seen 
-              high performing students accessing University studies. The organization was 
-              established in 2013, seeing its first student register at the University of 
-              Limpopo Medical school in 2014. Its now boasts a number of students both in 
-              medical school, commerce faculties and law faculties. 
-              <span>
-
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-4 col-xs-12">
-        <div class="pri_table_list active">
-          <span style="margin-left: 2%;margin-right: 2%;">
-            <img  src="images/masinyusane.jpg" width="80%" height="150">
-          </span>
-          <br/>
-             <span>
-             Is a registered NPO / Child & Youth Care centre situated in Atteridgeville
-             (Saulsville) west of Pretoria. African Proficient Group is a proud 
-             supporter and donor, and has adopted the home in the form of caring for the 
-             improvised teenage girls. We belive in affecting positive change through after
-             school educational activities, such as young successful motivational speakers 
-             who discuss various educational topics with the girls, educational games, pampering
-             sessions and goodie bags to raise their confidence, and inspire the girls to succeed
-             and rise above their circumstances.
-    
-            <span>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-4 col-xs-12">
-        <div class="pri_table_list">
-          <span style="margin-left: 2%;margin-right: 2%;">
-            <img  src="images/GSB.jpg" width="100%" height="150" >
-          </span>
-          <br/>
-            <span style="padding: 10px 15px;">
-            The Graduate Scool of Business commitment is to research and development, 
-            mainly in the area of innovation. African Proficient Group has partnered
-            with the UCT Graduate School of Business, Centre for Emerging Markets, as 
-            we strongly belive that current problems will not be solved with current 
-            available solutions. The innovation supported by the disciplined research 
-            has proven timeoisly to be what it is needed to solve complex matters.
-             <span>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- End csi table area -->
 
   <!-- career area start -->
-  <div id="careers" class="career-area area-padding">
+  <div  style="background-color: #f9f9f9;" id="careers" class="career-area area-padding">
     <div class="container">
       <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12">
@@ -991,25 +766,24 @@
         </div>
       </div>
       <div class="row">
-          <div class="career-header" style="display: flex">
-              <h1 style="margin: 2%;margin-top: 0;">
-                <img src="images/careers_icon.png" alt="">
-              </h1>
-              <span>
-              <p>
-                Our business is growing, both in experience and in the services we offer. Join us and make a key contribution
-                to the future of our great organization. Submit your CV with a clear outline of how you could add value to our
-                  unique, diverse and growing organisation.
-              </p>
+        
+        <div class="col-md-4 col-sm-4 careers-header">
+          <img src="images/careers_icon.png" style="margin-right: 20px;" width="150" height="150" alt="" align="left">
+            <p>
+              Our business is growing, both in experience and in the services we offer. Join us and make a key contribution
+              to the future of our great organization. Submit your CV with a clear outline of how you could add value to our
+                unique, diverse and growing organisation.
+            </p>
 
-              <p>
-                This is a cornerstone of our culture, where our people at all levels have the opportunity to share and learn based
-                on their expertise and experience. You will be exposed to a broad range of different industries and specialties at
-                  all levels.
-              </p>
-            </span>
-          </div>
-         
+            <p>
+              This is a cornerstone of our culture, where our people at all levels have the opportunity to share and learn based
+              on their expertise and experience. You will be exposed to a broad range of different industries and specialties at
+                all levels.
+            </p>
+            </div>
+      </div>
+         <br/>
+         <div class="row">
           <div class="col-md-4 col-sm-4 col-xs-12">
             <div class="about-move">
               <div class="services-details">
@@ -1048,17 +822,20 @@
               </div>
             </div>
           </div>
-        </div> 
-      </div>
-      <h5>Submit Your CV on careers@afrips.co.za</h5>
-      </div>
+        </div> .
+
+        <div class="col-md-12">
+          
+          <h4>Submit Your CV on <i class="fa fa-arrow-right"></i> careers@afrips.co.za</h4>
+            
+        </div>
+
 
       </div>
-      <!-- end Row -->
-    <!-- </div>
-  </div> -->
-  <!-- End Faq Area -->
-
+    </div>
+         
+      </div>
+  <!-- End career Area -->
 
   <!-- Start contact Area -->
   <div id="contact" class="contact-area">
@@ -1075,38 +852,37 @@
         <div class="row">
           <!-- Start contact icon column -->
           <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="contact-icon text-center">
-              <div class="single-icon">
-                <i class="fa fa-mobile"></i>
+            <div class="contact-icon phone text-center">
+              <a href="Call: 012 110 4021"><div class="single-icon">
+                <i class="fa fa-phone"></i>
                 <p>
                   Call: 012 110 4021<br>
                   <span>Monday-Friday (8am-5pm)</span>
                 </p>
-              </div>
+              </div></a>
             </div>
           </div>
           <!-- Start contact icon column -->
           <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="contact-icon text-center">
-              <div class="single-icon">
+            <div class="contact-icon mail text-center">
+              <a href="mailto: info@africanpg.co.za"><div class="single-icon">
                 <i class="fa fa-envelope-o"></i>
                 <p>
                   Email: info@afrips.co.za<br>
                   <span>Web: www.afrips.co.za</span>
                 </p>
-              </div>
+              </div></a>
             </div>
           </div>
           <!-- Start contact icon column -->
           <div class="col-md-4 col-sm-4 col-xs-12">
-            <div class="contact-icon text-center">
-              <div class="single-icon">
-                <i class="fa fa-map-marker"></i>
+            <div class="contact-icon linkedin text-center">
+              <a href="https://za.linkedin.com/company/africanproficientgroup"><div class="single-icon">
+                <i class="fa fa-linkedin"></i>
                 <p>
-                  Location: 221 Garsfontein Road, Menlyn<br>
-                  <span>Pretoria</span>
+                  LinkedIn: https://za.linkedin.com/company/africanproficientgroup
                 </p>
-              </div>
+              </div></a>
             </div>
           </div>
         </div>
@@ -1120,34 +896,6 @@
             <!-- End Map -->
           </div>
           <!-- End Google Map -->
-
-          <!-- Start contact form-->
-           <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="form contact-form">
-              <div id="sendmessage">Your message has been sent. Thank you!</div>
-              <div id="errormessage"></div>
-              <form action="" method="post" role="form" class="contactForm">
-                <div class="form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                  <div class="validation"></div>
-                </div>
-                <div class="text-center"><button type="submit">Send Message</button></div>
-              </form>
-            </div>
-          </div>
-          <!-- End contact form-->
         </div>
       </div>
     </div>
@@ -1158,69 +906,121 @@
   <footer>
     <div class="footer-area">
       <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-sm-4 col-xs-12">
+        <div class="row contact-contents">
+        <div class="contact-bar1">
+          <div class="col-md-4 col-sm-4 col-xs-12 contact-img">
             <div class="footer-content">
               <div class="footer-head">
-                <div class="footer-logo">
-                  <span><img src="APS/Logo-01.png" width="50%" height="50%"></span>
-                </div>
-                  <div class="footer-icons">
+                  <img src="APS/Logo-01.png" width="200" height="200">
+                  <p style="font-style: italic;">
+                    We have energetic and intelligent staff with a passion for empowering businesses through the development
+                    and use of information and communications technologies. Our staff possess the skills and knowledge necessary 
+                    to visualize the ICT needs of organizations and to meet those needs with innovative and intelligent solutions.
+                  </p>
+                  <!-- <div class="footer-icons">
+                    <p>
+                      We have energetic and intelligent staff with a passion for empowering businesses through the development
+                      and use of information and communications technologies.
+                    </p>
                   <ul>
                     <li>
                       <a href="#"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-google"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fa fa-pinterest"></i></a>
-                    </li>
+                    </li> 
                   </ul>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
+        </div>
           <!-- end single footer -->
-          <div class="col-md-4 col-sm-4 col-xs-12">
+        <div class="contact-bar2">
+          <div class="col-md-4 col-sm-4 col-xs-12 contact-address">
             <div class="footer-content">
               <div class="footer-head">
-                <h4>Pretoria (HQ)</h4>
-                  <p>1st Floor Building D,</p>
+                <h4>PRETORIA (HQ)</h4>
+                  <p>1st Floor Building D</p>
                   <p>Summit Place Office Park</p>
-                  <p>221 Garsfontein Road,</p>
+                  <p>221 Garsfontein Road</p>
                   <p>Menlyn</p>
                 <div class="footer-contacts">
-                  <p><span>Tel:</span> 012 110 4021</p>
                   <p><span>Email:</span> info@afrips.co.za</p>
-                  <p><span>Working Hours:</span> 8am-5pm</p>
+                  <p><span>Phone:</span> 012 110 4021</p>
                 </div>
               </div>
             </div>
           </div>
           <!-- end single footer -->
            <!-- end single footer -->
-           <div class="col-md-4 col-sm-4 col-xs-12">
+           <div class="col-md-4 col-sm-4 col-xs-12 contact-address">
             <div class="footer-content">
               <div class="footer-head">
-                  <h4>Johannesburg</h4>
-                  <p> Block A</p>
-                  <p>Wedgefield Office Park</p>
-                  <p>17 Musewell Road South,</p>
-                  <p>2191</p>
+                  <h4>JOHANNESBURG</h4>
+                  <p>9th Floor</p>
+                  <p>Atrium on 5th</p>
+                  <p>5th Street</p>
+                  <p>Sandton, 2196</p>
                 <div class="footer-contacts">
-                  <p><span>Tel:</span> 011 540 0162</p>
                   <p><span>Email:</span> info@afrips.co.za</p>
-                  <p><span>Working Hours:</span> 8am-5pm</p>
+                  <p><span>Phone:</span> 010 005 2330</p>
                 </div>
               </div>
             </div>
           </div>
           <!-- end single footer -->
+           <!-- end single footer -->
+           <div class="col-md-4 col-sm-4 col-xs-12 contact-address">
+            <div class="footer-content">
+              <div class="footer-head">
+                <h4>ESWATINI</h4>
+                  <p>The Hive</p>
+                  <p>The New Mall</p>
+                  <p>P.O Box 3005</p>
+                  <p>Mbabane</p>
+                <div class="footer-contacts">
+                  <p><span>Email:</span> info@afrips.co.za</p>
+                  <p><span>Phone:</span> +268 7641 7787</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end single footer -->
+           <!-- end single footer -->
+           <div class="col-md-4 col-sm-4 col-xs-12 contact-address">
+            <div class="footer-content">
+              <div class="footer-head">
+                <h4>DURBAN</h4>
+                  <p>2 Ncondo Place</p>
+                  <p>Ridgeside</p>
+                  <p>Umhlanga Ridge</p>
+                  <p>Durban</p>
+                <div class="footer-contacts">
+                  <p><span>Email:</span> info@afrips.co.za</p>
+                  <p><span>Phone:</span> 031 830 5311</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end single footer -->
+           <!-- end single footer -->
+           <div class="col-md-4 col-sm-4 col-xs-12 contact-address">
+            <div class="footer-content">
+              <div class="footer-head">
+                <h4>CAPE TOWN</h4>
+                  <p>Tyger Valley</p>
+                  <p>Willowbridge</p>
+                  <p>1st Floor Willowbridge Centre</p>
+                  <p>Carl Cronje Drive</p>
+                  <p>Cape Town, 7530</p>
+                <div class="footer-contacts">
+                  <p><span>Phone:</span> 021 974 6100</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+          <!-- end single footer -->
+        </div>
+      </div>
       </div>
     </div>
     <div class="footer-area-bottom">
@@ -1229,7 +1029,8 @@
           <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="copyright text-center">
               <p>
-                &copy; <strong>2020 A subsidiary of African Proficient Group </strong>
+               African Proficient Software is a subsidiary of <a href="https://africanpg.co.za/">African Proficient Group</a>.<br/><br/>
+                &copy; 2020<strong> African Proficient Software</strong>. All Rights Reserved.
               </p>
             </div>
           </div>
@@ -1238,7 +1039,7 @@
     </div>
   </footer>
 
-    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <a href="#" style="display:block" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
   
   <!-- JavaScript Libraries -->
