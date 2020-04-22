@@ -480,13 +480,19 @@
     width: 100%;
   }
   .ml12 .letter {
-    font-size: 90%;
+    font-size: 85%;
   }
 }
 
 @media only screen and (min-width: 900px) {
   .contact-address {
     width: 50%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  div.custom-content img{
+    width: -webkit-fill-available;
   }
 }
 
@@ -524,7 +530,4 @@
     width: 20%;
   }
 
-  div.custom-content img{
-    width: -webkit-fill-available;
-  }
 }

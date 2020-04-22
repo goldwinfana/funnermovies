@@ -638,6 +638,10 @@ ul.li-navbar i:hover{
   text-transform: capitalize;
 }
 
+.head-team {
+  display: grid;
+}
+
 .tab-menu .nav-tabs>li>a:hover {
   border-color: #eee #eee #ddd;
 }
