@@ -77,6 +77,8 @@ h4 {
 h5 {
   font-size: 20px;
   line-height: 22px;
+  color: yellowgreen;
+  text-shadow: 0 0 2px rgba(0, 0, 0, .45);
 }
 
 h6 {
@@ -477,6 +479,10 @@ ul.li-navbar i:hover{
   3. About Area
 --------------------------------*/
 
+.about-area {
+  background-color: #f9f9f9;
+}
+
 .single-well>a {
   display: block;
 }
@@ -546,30 +552,9 @@ ul.li-navbar i:hover{
   5.Career Area
 ----------------------------------------*/
 
-.careers-header, .contact-img,  .contact-address {
+.careers-header {
   width: 100%;
 }
-
-.contact-contents{
-  display: flex;
-}
-
-.contact-bar1 {
-
-  width: 40%;
-}
-.contact-bar2 {
-  
-  width: 60%;
-}
-
-.phone i{
-  color: limegreen;
-}
-.mail i {
-  color: darkorange;
-}
-
 
 /*----------------------------------------
   6.What we do Area
@@ -675,7 +660,6 @@ ul.li-navbar i:hover{
 .tab-content {
   border: 1px solid #ccc;
   padding: 0 15px 15px;
-  margin-bottom: 25px;
 }
 
 .tab-menu ul.nav li a {
@@ -729,6 +713,17 @@ ul.li-navbar i:hover{
 /*----------------------------------------
  7.Wellcome Area Css
 ----------------------------------------*/
+
+.ml12 .letter {
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 20px;
+  line-height: 22px;
+  color: yellowgreen;
+  text-shadow: 0 0 2px rgba(0, 0, 0, .45);
+}
+
+
 
 .wellcome-area {
   background: rgba(248, 248, 248, 0.8) url("../img/background/bg1.jpg");
@@ -803,363 +798,324 @@ ul.li-navbar i:hover{
   color: #3ec1d5;
 }
 
-/*----------------------------------------
- 8.Team Area Css
-----------------------------------------*/
+/*--------------------------------*/
 
-.team-member {
-  background: rgba(0, 0, 0, 0.65) none repeat scroll 0 0;
+/*  9.review Area
+/*--------------------------------*/
+
+.reviews-area {
+  background: url(../img/background/bg1.jpg);
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.work-left-text {
+  background: #3EC1D5 none repeat scroll 0 0;
+}
+
+.work-left-text {
+  width: 50%;
+}
+
+.work-right-text {
+  background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
+  float: right;
+  height: 100%;
+  overflow: hidden;
+  padding: 71px 0;
+  width: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.work-right-text h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.work-right-text h5 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 34px;
+  text-transform: uppercase;
+}
+
+.work-right-text .sus-btn {
+  margin-left: 0;
+  margin-top: 20px;
+}
+
+.single-awesome-4 {
   display: block;
-  margin-right: -15px;
-  padding: 10px;
+  float: left;
+  overflow: hidden;
+  width: 33.33%;
+}
+
+.single-awesome-4 .add-actions {
+  padding: 10px 20px;
+}
+
+
+/*----------------------------------------*/
+
+/* 11. Pricing Area
+/*----------------------------------------*/
+
+.pricing-area {
+  background: rgba(0, 0, 0, 0.02) none repeat scroll 0 0;
+}
+
+.pri_table_list {
+  border: 1px solid #ccc;
+  text-align: center;
+  transition: all 0.4s ease 0s;
+  background: #fff;
+  border-radius: 10px;
+  padding: inherit;
+  display: inline-grid;
+}
+span.border-line {
+    border-bottom-style: solid;
+    border-color: lightgray;
+    margin: 5px;
+}
+
+
+.pri_table_list h3 span {
+  font-size: 16px;
+}
+
+.pri_table_list ol li {
+  border-bottom: 1px solid #ccc;
+  color: #666;
+  padding: 12px 15px;
+  position: relative;
+  text-align: left;
+}
+
+.pri_table_list li.check.cross::after {
+  content: "\f00d";
+  font-family: fontawesome;
+  font-size: 14px;
+  position: absolute;
+  right: 50px;
+  top: 12px;
+  color: indianred;
+}
+
+.pri_table_list li.check::after {
+  content: "\f00c";
+  font-family: fontawesome;
+  font-size: 14px;
+  position: absolute;
+  right: 50px;
+  top: 12px;
+  color: #3EC1D5;
+}
+
+.pri_table_list button {
+  background: #444 none repeat scroll 0 0;
+  border: 1px solid #444;
+  color: #fff;
+  margin-bottom: 25px;
+  padding: 10px 35px;
+  text-transform: uppercase;
+  transition: all 0.4s ease 0s;
+  border-radius: 30px;
+}
+
+.pri_table_list>h3 {
+  color: #333;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 25px;
+  padding: 30px 0 20px;
+  text-transform: uppercase;
+  transition: all 0.4s ease 0s;
+}
+
+.pri_table_list ol {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0 0 25px;
+}
+
+.pri_table_list.active {
+  transition: all 0.4s ease 0s;
   position: relative;
   overflow: hidden;
 }
 
-.team-member::before {
-  background: rgba(0, 0, 0, 0) url("../img/team/team01.jpg") repeat scroll 0 0;
-  content: "";
-  display: block;
+.saleon {
+  background: #3EC1D5 none repeat scroll 0 0;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  left: -26px;
+  padding: 2px 25px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 16px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+}
+
+.pri_table_list>button:hover {
+  background-color: #fff;
+  border: 1px solid #333;
+  color: #333;
+}
+
+.active>h3 {
+  /* background: #f5f5f5 none repeat scroll 0 0; */
+  color: #333;
+  transition: all 0.4s ease 0s;
+}
+
+.active>button {
+  background: #3EC1D5 none repeat scroll 0 0;
+  border: 1px solid #3EC1D5;
+  color: #fff;
+  transition: 0.4s;
+}
+
+.active>button:hover {
+  background: #333 none repeat scroll 0 0;
+  border: 1px solid #333;
+  color: #fff;
+  transition: 0.4s;
+}
+
+/*----------------------------------------
+ 12.Testimonial Area Css
+----------------------------------------*/
+
+.testimonials-area {
+  background: rgba(0, 0, 0, 0) url("../img/background/slider1.jpg") no-repeat fixed center top / cover;
+  height: auto;
+  width: 100%;
+}
+
+.testi-inner {
+  position: relative;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.testi-overly {
+  background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
   height: 100%;
   left: 0;
-  margin-right: -15px;
-  padding: 10px;
   position: absolute;
   top: 0;
   width: 100%;
   z-index: -1;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
-  transition: 5s;
-  transform: scale(1);
 }
 
-.team-member:hover.team-member::before {
-  transform: scale(1.2);
-}
-
-.single-team-member {
-  border: 1px solid #ddd;
-}
-
-.team-left-text h4 {
+.quate {
+  border: 1px dotted #fff;
+  border-radius: 50%;
   color: #fff;
-  font-size: 30px;
+  display: inline-block;
+  font-size: 24px;
+  height: 70px;
+  line-height: 70px;
+  width: 70px;
+}
+
+.quate:hover {
+  color: #fff;
+}
+
+.testi-img img {
+  border: 1px dotted rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
+  height: 80px;
+  margin: 0 auto;
+  padding: 5px;
+  transition: background 0.6s ease-out 0s;
+  width: 80px !important;
+}
+
+.testi-text p {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5em;
+  margin: 20px 0;
+  letter-spacing: 1px;
+}
+
+.testi-text h6 {
+  color: #fff;
+  font-size: 20px;
+}
+
+.testimonial-carousel.owl-carousel.owl-theme .owl-controls .owl-dots div.owl-dot>span {
+  background: #fff none repeat scroll 0 0;
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  -moz-transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  -ms-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.testimonial-carousel.owl-carousel.owl-theme .owl-controls .owl-dots {
+  bottom: -30px;
+  display: block;
+  left: 50%;
+  margin-left: -20px;
+  position: absolute;
+}
+
+.testimonial-content {
+  margin-bottom: 15px;
+}
+
+.testimonial-carousel.owl-carousel.owl-theme .owl-controls .owl-dots div.owl-dot {
+  display: inline-block;
+  margin: 0 3px;
+}
+
+.testimonial-carousel.owl-carousel.owl-theme .owl-controls .owl-dots div.owl-dot.active span {
+  background: #3EC1D5;
+}
+
+.testi-text.text-center>h6 {
+  color: #fff;
+  font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.team-left-text p {
-  color: #fff;
-  font-size: 17px;
-  line-height: 26px;
-}
-
-.email-news {
-  display: block;
-  margin: 30px 0;
-  overflow: hidden;
-  text-align: center;
-  width: 100%;
-}
-
-.email-news .email_button input {
-  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-  border: 1px solid #fff;
-  color: #fff;
-  float: left;
-  font-size: 13px;
-  padding: 8px;
-  width: 81%;
-}
-
-.email-news .email_button>button {
-  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-  border: 1px solid #fff;
-  color: #fff;
-  float: left;
+.guest-rev {
+  color: #ddd;
   font-size: 16px;
-  padding: 8px 12px;
-  text-align: center;
 }
 
-.email-news .email_button>button:hover {
-  background: #3EC1D5;
-  border: 1px solid #fff;
-  color: #fff;
-}
-
-.team-left-icon ul li {
-  display: inline-block;
-}
-
-.team-left-icon ul li a:hover {
+.guest-rev>a {
   color: #3EC1D5;
-  background: #fff;
-  border: 2px solid #fff;
-}
-
-.team-left-icon ul li a {
-  border: 2px solid #fff;
-  color: #fff;
-  display: block;
-  font-size: 16px;
-  height: 40px;
-  line-height: 37px;
-  margin: 0 3px;
-  width: 40px;
-}
-
-.team-member-carousel .single-team-member {
-  overflow: hidden;
-  width: 100%;
-}
-
-.single-team-member:hover .team-img a:after {
-  opacity: 1;
-}
-
-.single-team-member:hover .team-social-icon {
-  top: 45%;
-  opacity: 1;
-}
-
-.team-img {
-  position: relative;
-}
-
-.team-img>a {
-  display: block;
-}
-
-.team-img>a::after {
-  background: rgba(0, 0, 0, 0.70);
-  bottom: 0;
-  content: "";
-  height: 100%;
-  left: 0;
-  position: absolute;
-  transition: all 0.5s ease 0s;
-  width: 100%;
-  opacity: 0;
-}
-
-.team-social-icon {
-  left: 50%;
-  margin-left: -61px;
-  opacity: 0;
-  position: absolute;
-  top: 30%;
-  transition: 1.3s;
-}
-
-.team-social-icon ul li {
-  display: inline-block;
-}
-
-.team-social-icon ul li a {
-  border: 1px solid #fff;
-  border-radius: 50%;
-  color: #fff;
-  display: block;
   font-size: 14px;
-  height: 34px;
-  line-height: 35px;
-  margin: 0 3px;
-  width: 34px;
 }
 
-.team-social-icon ul li a:hover {
-  color: #fff;
-  border: 1px solid #3EC1D5;
-  background: #3EC1D5;
-}
-
-.team-content {
-  padding: 10px 0px;
-}
-
-.team-content>h4, .team-content>p {
-  color: #444;
-  margin-bottom: 5px;
-}
-
-.team-content.head-team p {
-  margin-bottom: 0;
-}
-
-.team-left-icon.text-center {
-  margin-bottom: 20px;
-}
-
-.head-team h4 {
-  display: inline-block;
-  font-size: 25px;
-  font-weight: 600;
-  padding-bottom: 10px;
-  text-transform: uppercase;
-}
-
-
-/*----------------------------------------
- 10.Portfolio Area Css
-----------------------------------------*/
-
-.pst-content {
-  padding-left: 10px;
-}
-
-.project-menu {
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-.project-menu li {
-  display: inline-block;
-}
-
-.project-menu li a {
-  background: #fff none repeat scroll 0 0;
-  border: 1px solid #444;
-  border-radius: 20px;
-  color: #444;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 14px;
-  font-weight: 500;
-  margin: 0 4px;
-  padding: 6px 15px;
-  text-transform: capitalize;
-  transition: all 0.3s ease 0s;
-}
-
-.project-menu li a.active, .project-menu li a:hover {
-  border-color: #3EC1D5;
-  background: #3EC1D5;
-  color: #fff;
-  text-decoration: none;
-}
-
-.single-awesome-portfolio {
-  float: left;
-  overflow: hidden;
-  padding: 15px;
-  width: 25%;
-  position: relative;
-}
-
-.single-awesome-project {
-  overflow: hidden;
-  margin-bottom: 30px;
-}
-
-.first-item {
-  margin-bottom: 30px;
-}
-
-.awesome-img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-.awesome-img>a {
-  display: block;
-  position: relative;
-}
-
-.single-awesome-project:hover .awesome-img>a::after {
-  opacity: 1;
-}
-
-.single-awesome-project:hover .add-actions {
-  opacity: 1;
-  bottom: 0;
-}
-
-.awesome-img>a::after {
-  background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
-  content: "";
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  opacity: 0;
-  transition: 0.4s;
-}
-
-.add-actions {
-  background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
-  bottom: 30px;
-  display: block;
-  height: 100%;
-  left: 0;
-  opacity: 0;
-  overflow: hidden;
-  padding: 10px 15px;
-  position: absolute;
-  transition: all 0.4s ease 0s;
-  width: 100%;
-}
-
-.project-dec {
-  display: block;
-  height: 100%;
-  width: 100%;
-}
-
-.project-dec a {
-  display: block;
-  height: 100%;
-  width: 100%;
-}
-
-.project-dec h4 {
-  margin-bottom: 5px;
-}
-
-.project-dec h4:hover {
-  color: #fff;
-}
-
-.project-dec h4 {
-  color: #ddd;
-  font-size: 24px;
-  margin-top: -45px;
-  padding-top: 50%;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 800;
-}
-
-.project-dec span {
-  color: #ddd;
-  font-size: 13px;
-}
-
-.project-action-btn {
-  display: block;
-  height: 100%;
-  text-align: center;
-  transition: all 1s ease 0s;
-  width: 100%;
-}
-
-.project-action-btn li {
-  display: block;
-  height: 100%;
-  width: 100%;
-}
-
-.project-action-btn li a {
-  display: block;
-  height: 100%;
-  width: 100%;
-}
-
+/*--------------------------------*/
 
 /*  13.Blog Area
 /*--------------------------------*/
@@ -1431,13 +1387,33 @@ ul.li-navbar i:hover{
   margin-bottom: 20px;
 }
 
+.contact-contents{
+  display: flex;
+}
+
+.contact-bar1 {
+
+  width: 40%;
+}
+.contact-bar2 {
+  
+  width: 60%;
+}
+
+.phone i{
+  color: limegreen;
+}
+.mail i {
+  color: darkorange;
+}
+
 /*----------------------------------------*/
 
 /*  15. Footer Area
 /*----------------------------------------*/
 
 .footer-area {
-  padding: 40px 0 0;
+  padding: 40px 0;
   background: #f9f9f9;
 }
 
@@ -1446,9 +1422,9 @@ ul.li-navbar i:hover{
 }
 
 .footer-head h4 {
-  color:yellowgreen;
   font-size: 14px;
   font-weight: bold;
+  color: yellowgreen;
   letter-spacing: 2px;
   padding-bottom: 10px;
   text-transform: uppercase;
@@ -1510,7 +1486,7 @@ ul.li-navbar i:hover{
 .footer-content {
   display: block;
   overflow: hidden;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .popular-tag ul li a:hover, .footer-icons ul li a:hover {
@@ -1541,9 +1517,8 @@ ul.li-navbar i:hover{
   padding: 15px 0;
 }
 
-.copyright-text a:hover {
-  text-decoration: underline;
-  color: #3EC1D5;
+.copyright a:hover {
+  color: yellowgreen;
 }
 
 .copyright-text a {
@@ -1555,13 +1530,11 @@ ul.li-navbar i:hover{
   color: #444;
 }
 
-.copyright a {
+.copyright a{
   color: #FF851B;
   font-weight: bold;
 }
-.copyright a :hover{
-  color: yellowgreen;
-}
+
 
 /*----------------------------------------*/
 
