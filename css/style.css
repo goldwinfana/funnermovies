@@ -1417,7 +1417,7 @@ span.border-line {
 /*----------------------------------------*/
 
 .footer-area {
-  padding: 40px 0;
+  padding: 40px 0 0;
   background: #f9f9f9;
 }
 
@@ -1430,7 +1430,7 @@ span.border-line {
   font-weight: bold;
   color: yellowgreen;
   letter-spacing: 2px;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
   text-transform: uppercase;
 }
 
