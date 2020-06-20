@@ -1092,20 +1092,13 @@ ul.li-navbar i:hover{
   padding: 20px;
   color: black;
 }
-.menu-toogle button{
-  width: 5%;
-  border: 1px black solid;
-  padding: 2;
-  color: white;
-  background: black !important;
-  height: inherit;
-  float: right;
-  margin-left: 95%;
+.fa-window-close{
+  margin-left: auto;
 }
 
 .menu-toogle a{
 color: black;
-font-size: larger;
+font-size: x-large;
 }
 
 /* Menu bar end */

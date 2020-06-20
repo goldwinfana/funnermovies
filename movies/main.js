@@ -15,3 +15,23 @@ function downloadSub(){
 }
 
 
+function openNav() {
+  document.querySelector(".menu-toogle").style.display = "grid";
+
+  var iOS =  
+      /iPad|iPhone|iPod/.test(navigator.userAgent) && 
+      !window.MSStream;
+
+  if(iOS ==true)
+  {
+    document.getElementById("sticker_container").style.marginBottom = "200%";
+  }
+
+}
+
+function closeNav() {
+ 
+  //document.querySelector(".menu-toogle").style.height = "0%";
+  $('.menu-toogle').fadeOut(600);
+  document.getElementById("sticker_container").style.marginBottom = "0%";
+}
