@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Funner_Movies</title>
+  <meta content="width=device-width, initial-scale=1.0,min-width=500" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="./../../../images/logo-icon.png" rel="icon">
+  <link href="./../../../images/logo-icon.png" rel="apple-touch-icon">
+
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
+
+  <script src="./../../../lib/jquery/jquery.min.js"></script>
+  <script src="./../../../lib/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Bootstrap CSS File -->
+  <link href="./../../../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="./../../../lib/nivo-slider/css/nivo-slider.css" rel="stylesheet">
+  <link href="./../../../lib/owlcarousel/owl.carousel.css" rel="stylesheet">
+  <link href="./../../../lib/owlcarousel/owl.transitions.css" rel="stylesheet">
+  <link href="./../../../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="./../../../lib/animate/animate.min.css" rel="stylesheet">
+  <link href="./../../../lib/venobox/venobox.css" rel="stylesheet">
+
+  <!-- Nivo Slider Theme -->
+  <link href="./../../../css/nivo-slider-theme.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="./../../../css/style.css" rel="stylesheet">
+  <link href="./../../series-style.css" rel="stylesheet">
+  <!-- Responsive Stylesheet File -->
+  <link href="./../../../css/responsive.css" rel="stylesheet">
+
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example">
+
+  <div class="menu-toogle">
+    <button class="btn-danger close" onclick="closeNav()">X</button>
+    <a onclick="closeNav()" href="./../../../">Home</a>
+    <a onclick="closeNav()" href="./../../../movies/">Movies</a>
+    <a onclick="closeNav()" href="./../../../series/">Series</a>
+    <a onclick="closeNav()" href="#contact">Contact</a>
+  </div>
+  
+  <header>
+    <!-- header-area start -->
+    <div id="sticker" class="header-area">
+      <div id="sticker_container" class="container">
+        <div class="row">
+          
+          <div class="col-md-12 col-sm-12">
+
+            <!-- Navigation -->
+            <nav class="navbar navbar-default">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <a href="#"><img class="navbar-toggle collapsed img" src="./../../../images/logo.png" ></a>
+                <button type="button" title="Menu" class="navbar-toggle collapsed" onclick="openNav()" aria-expanded="false">
+                    <span class="menu-site">&#9776;</span>
+									</button>
+                <!-- Brand -->
+              </div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
+                 <img class="company-logo" src="./../../../images/logo.png" width="200" style="margin: 2%;margin-left: 0;">
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="active">
+                    <a class="page-scroll" href="./../../../">HOME</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="./../../../movies/">MOVIES</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="./../../../series/">TV-SERIES</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="#contact">CONTACT</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- navbar-collapse -->
+            </nav>
+            <!-- END: Navigation -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- header-area end -->
+  </header>
+  <!-- header end -->
+    
+  <!-- Start Slider Area -->
+  <div id="series" class="series-area area-padding container">
+  
+        <div class="section-title">
+          <span><a href="./../../../">HOME</a> / <a href="./../../../series/">TV-SERIES</a> / Siren</span>
+        </div>
+  
+          <div class="video-container container">
+      
+            <div id="video-cover">
+              <img src="./../../../images/into-the-badlands.png" alt="Snow" >
+              <a onclick="playVideo();" class="centered mb-4" data-vbtype="video" data-autoplay="true"></a>
+            </div>
+      
+            <div id="video-cover-play">
+              <video id="video-play" width="100%" controls>
+                Your browser does not support HTML video.
+              </video>
+              <a id="download-video"  download hidden></a>
+              <button onclick="download()" class="btn-download">Download <i class="fa fa-download"></i></button>
+            </div>
+      
+          </div>
+
+
+      <div class="container">
+  
+          <div class="row cover-details" >
+              <span style="display: block;">
+                <h2>Siren (S01)</h2> <button type="button" class="btn-danger trailor" data-toggle="modal" data-target="#myModal"><i class="fa fa-film" aria-hidden="true"></i>  Trailor</button>
+              </span> 
+                <p></p>
+                <p>Genre : N/A</p>
+                <p>Year : N/A</p>
+                <p>Country : N/A</p>
+                <p>Actors : N/A</p>
+                <p>Release Date : N/A</p>
+          </div>
+      </div>
+
+      <div class="container eps-seasons" >
+        <div class="">
+          <button onclick="postURL(`?eps=e01`)" class="btn-primary season">Season 1 </button>
+          <button onclick="location = './../season 02'" class="btn-primary season">Season 2 </button>
+        </div>
+        <div style="border-top: 1px solid white;"></div>
+        <div>
+            <button id="e01" onclick="postURL(`?eps=e01`)" class="btn-primary eps" >Episode 1
+              <input value="videos/Siren_S01E01.FunnerMovies .mkv - Shortcut" hidden>
+            </button>
+            <button id="e02" onclick="postURL(`?eps=e02`)" class="btn-primary eps" >Episode 2
+              <input value="videos/Siren_S01E02.FunnerMovies .mkv - Shortcut" hidden>
+            </button>
+            <button id="e03" onclick="postURL(`?eps=e03`)" class="btn-primary eps" >Episode 3
+              <input value="videos/Siren_S01E03.FunnerMovies .mkv - Shortcut" hidden>
+            </button>
+            <button id="e04" onclick="postURL(`?eps=e04`)" class="btn-primary eps" >Episode 4
+              <input value="videos/Siren_S01E04.FunnerMovies .mkv - Shortcut" hidden>
+            </button>
+            <button id="e05" onclick="postURL(`?eps=e05`)" class="btn-primary eps" >Episode 5
+              <input value="videos/Siren_S01E05.FunnerMovies .mkv - Shortcut" hidden>
+            </button>
+            <button id="e06" onclick="postURL(`?eps=e06`)" class="btn-primary eps">Episode 6
+              <input value="videos/Siren_S01E06.FunnerMovies .mkv - Shortcut" hidden>
+            </button>
+            <button id="e07" onclick="postURL(`?eps=e07`)" class="btn-primary eps" >Episode 7
+              <input value="videos/Siren_S01E07.FunnerMovies .mkv - Shortcut" hidden>
+            </button>
+            <button id="e08" onclick="postURL(`?eps=e08`)" class="btn-primary eps" >Episode 8
+              <input value="videos/Siren_S01E08.FunnerMovies .mkv - Shortcut" hidden>
+            </button>
+            <button id="e09" onclick="postURL(`?eps=e09`)" class="btn-primary eps" >Episode 9
+              <input value="videos/Siren_S01E09.FunnerMovies .mkv - Shortcut" hidden>
+            </button>
+            <button id="e10" onclick="postURL(`?eps=e10`)" class="btn-primary eps">Episode 10
+              <input value="videos/Siren_S01E10.FunnerMovies .mkv - Shortcut" hidden>
+            </button>
+          
+          </div>
+      </div>
+
+      
+      
+    </div><br/>
+   
+<!-- Start contact Area -->
+<div id="contact" class="contact-area">
+  <div class="contact-inner area-padding">
+    <div class="contact-overly"></div>
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="section-headline text-center">
+            <h2>Contact us</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+
+          <div class="contact-icon mail text-center">
+            <a href="mailto: Funner_Movies@gmail.com"><div class="single-icon">
+              <i class="fa fa-envelope-o"></i>
+              <p>
+                For enquiries and suggestions, Please kindly send email.<br>
+                <span>Email: Funner_Movies@gmail.com</span>
+              </p>
+            </div></a>
+          </div>
+      </div>
+  
+     
+    </div>
+  </div>
+</div>
+<!-- End Contact Area -->
+
+<!-- Start Footer bottom Area -->
+
+<footer>
+  <div class="footer-area">
+    <div class="container">
+      <div class="row contact-contents">
+      <div class="contact-bar1">
+        <div class="col-xs-12">
+          <div class="footer-content">
+            <div class="footer-head">
+                <img src="./../../../images/logo.png" width="300" >
+                <p style="font-style: italic;font-weight: bold;">
+                  Currently running through small server, and raising capital to expand and upload more of Your
+                  favorate Movies and Tv-Series right here on Funner_Movies site. For appreciations and donations
+                  you can send via Pay-Pal <i style="color: darkcyan;" class="fa fa-paypal"></i> that way your credentials are kept safe.
+                </p>
+               
+            </div>
+          </div>
+        </div>
+      </div>
+        <!-- end single footer -->
+      <div class="contact-bar2">
+        <div class="col-md-4 col-sm-4 col-xs-12 contact-address">
+          <div class="footer-content">
+            <div class="footer-head">
+              <h4>APPRECIATIONS / Donations</h4>
+                <h5>Pay-Pal Account <i style="color: darkcyan;" class="fa fa-paypal"></i></h5>
+              <div class="footer-contacts">
+                <p><span>Email:</span> Funner_Movies@gmail.co.za</p>
+                <p><span>Website:</span> www.Funner_Movies.tv</p>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+        <!-- end single footer -->
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+  <div class="footer-area-bottom">
+    <div class="container">
+      <div class="row">
+          <div class="copyright text-center">
+              &copy; 2020<strong> www.Funner_Movies.tv</strong>. All Rights Reserved.
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- end footer -->
+
+  <a href="#" style="display:block" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script src="./../../../lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="./../../../lib/venobox/venobox.min.js"></script>
+  <script src="./../../../lib/knob/jquery.knob.js"></script>
+  <script src="./../../../lib/wow/wow.min.js"></script>
+  <script src="./../../../lib/parallax/parallax.js"></script>
+  <script src="./../../../lib/easing/easing.min.js"></script>
+  <script src="./../../../lib/nivo-slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
+  <script src="./../../../lib/appear/jquery.appear.js"></script>
+  <script src="./../../../lib/isotope/isotope.pkgd.min.js"></script>
+
+  <script src="./../../../js/main.js"></script>
+  <script src="./../../main.js"></script>
+  <script src="./../../../js/toggle.js"></script>
+</body>
+
+</html>

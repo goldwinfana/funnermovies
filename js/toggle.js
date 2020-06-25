@@ -55,7 +55,7 @@ $('img.nivo-main-image').on('load', function(e){
   {
     document.querySelector('.slide-p').innerHTML= "Queen Sono (2020)";
   }
-  else if(src == "images/slides/blood&water.jpeg")
+  else if(src == "images/slides/slide-blood&water.jpg")
   {
     document.querySelector('.slide-p').innerHTML= "Blood And Water (2020)";
   }
@@ -91,7 +91,6 @@ anime.timeline({loop: true})
 
 
 // Get the modal
-var modal = document.getElementById("myModal");
   
 function close() {
   $('#myModal').delay(10000).fadeOut(800);

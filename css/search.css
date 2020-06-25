@@ -1,0 +1,39 @@
+#myInput {
+    background-image: url('../images/search-1.png');
+    background-position: 0;
+    background-repeat: no-repeat;
+    width: 80%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    margin-top: 50px;
+  }
+  .search-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    padding-top:10px ;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: black;
+    z-index: 99999;
+    text-align: center;
+  
+  }
+  .fa-search{
+    font-size: 20px;
+  }
+  .search {
+    margin-left: auto;
+    float: right;
+    padding-right: 20px;
+    font-size: xx-large !important;
+  }
+  .not-found{
+    display: none;
+    font-size: x-large;
+  }
+  

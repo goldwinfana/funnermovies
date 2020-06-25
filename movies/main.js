@@ -35,3 +35,12 @@ function closeNav() {
   $('.menu-toogle').fadeOut(600);
   document.getElementById("sticker_container").style.marginBottom = "0%";
 }
+
+
+$('#movies-modal').on('click', function(){
+  var iframes = $('iframe').attr('src');
+  
+    $('iframe').attr('src','');
+    $('iframe').attr('src',iframes);
+});
+

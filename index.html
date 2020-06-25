@@ -32,7 +32,8 @@
 
   <!-- Nivo Slider Theme -->
   <link href="css/nivo-slider-theme.css" rel="stylesheet">
-
+<!-- serach -->
+<link href="css/search.css" rel="stylesheet">
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
   <!-- Responsive Stylesheet File -->
@@ -54,6 +55,7 @@
     <a onclick="closeNav()" href="./movies/">Movies</a>
     <a onclick="closeNav()" href="./series/">Series</a>
     <a onclick="closeNav()" href="#contact">Contact</a>
+    <a onclick="openSearch()"><i data-toggle="modal" data-target="#search-modal" class="fa fa-search"></i></a>
   </div>
   <!-- end modal -->
   
@@ -94,6 +96,9 @@
                   <li>
                     <a class="page-scroll" href="#contact">CONTACT</a>
                   </li>
+                  <li>
+                    <a onclick="openSearch()"><i data-toggle="modal" data-target="#search-modal" class="fa fa-search"></i></a>
+                  </li>
                 </ul>
               </div>
               <!-- navbar-collapse -->
@@ -114,7 +119,7 @@
         <img src="images/slides/slide-money-heists.png" alt="" title="#slider-direction-1" />
         <img src="images/slides/slide-see.jpg" alt="" title="#slider-direction-2" />
         <img src="images/slides/slide-queen-sono.jpg" alt="" title="#slider-direction-3" />
-        <img src="images/slides/blood&water.jpeg" alt="" title="#slider-direction-4" />
+        <img src="images/slides/slide-blood&water.jpg" alt="" title="#slider-direction-4" />
         <img src="images/slides/slide-extraction.jpg" alt="" title="#slider-direction-5" />
         <img src="images/slides/slide-bloodshot.jpg" alt="" title="#slider-direction-6" />
         <img src="images/slides/slide-badlands.jpg" alt="" title="#slider-direction-7" />
@@ -123,7 +128,14 @@
     </div>
   </div>
   <!-- End Slider Area -->
-
+<!-- search -->
+<div id="search-modal" class="search-modal">
+  <a href="javascript:void(0)" class="fa fa-window-close search"onclick="closeSearch()"></a>
+  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for movies or series.." title="Type in a name">
+  <div id="results"></div>
+  <div class="not-found">Results Not Found <i class="fa fa-exclamation-circle"></i></div>
+</div>
+<!-- end search -->
   <!-- Start movies area -->
   <div id="movies" class="movies-area area-padding">
     <div class="container">
@@ -136,7 +148,7 @@
       </div>
 
 
-      <div class="row" style="display: contents;">
+      <div class="row movser" style="display: contents;">
         <a href="movies/extraction/">
           <div class="cover-body" style=" background-image: url(images/extraction.jpg);">
             <div class="movies-move">
@@ -362,7 +374,7 @@
         </div>
       </div>
 
-        <div class="row"  style="display: contents;">
+        <div class="row movser"  style="display: contents;">
           <a href="series/altered carbon//season 01/">
             <div class="cover-body" style=" background-image: url(images/ac.jpg);">
               <div class="movies-move">
@@ -628,6 +640,7 @@
 
   <script src="js/main.js"></script>
   <script src="js/toggle.js"></script>
+  <script src="js/search.js"></script>
 </body>
 
 </html>

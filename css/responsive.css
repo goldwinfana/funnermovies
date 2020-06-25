@@ -159,6 +159,18 @@
 
 /* small mobile :320px. */
 
+@media only screen and (min-width: 520px) and (max-width: 720px) {
+  .intro .letter{
+    font-size: 30px;
+  }
+}
+@media (max-width: 519px) {
+  .intro .letter{
+    font-size: 17px;
+  }
+}
+
+
 @media (max-width: 767px) {
 
   .header-area {
