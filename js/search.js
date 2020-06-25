@@ -1,4 +1,4 @@
-$('#results').append($(".movser").children());
+$(".movser").children().clone().appendTo($('#results'));
 $('#results').css('display','none');
 function myFunction() {
  

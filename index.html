@@ -55,7 +55,7 @@
     <a onclick="closeNav()" href="./movies/">Movies</a>
     <a onclick="closeNav()" href="./series/">Series</a>
     <a onclick="closeNav()" href="#contact">Contact</a>
-    <a onclick="openSearch()"><i data-toggle="modal" data-target="#search-modal" class="fa fa-search"></i></a>
+    <a href="javascript:void(0)" onclick="closeNav();openSearch();"><i data-toggle="modal" data-target="#search-modal" class="fa fa-search"></i></a>
   </div>
   <!-- end modal -->
   
@@ -73,7 +73,7 @@
             <nav class="navbar navbar-default">
               <!-- Brand and toggle get grouped for better mobile display -->
               <div class="navbar-header">
-                <a href="#"><img class="navbar-toggle collapsed img" src="images/logo.png" ></a>
+                <a href="/"><img class="navbar-toggle collapsed img" src="images/logo.png" ></a>
                 <button type="button" title="Menu" class="navbar-toggle collapsed" onclick="openNav()" aria-expanded="false">
                     <span class="menu-site">&#9776;</span>
 									</button>
@@ -97,7 +97,7 @@
                     <a class="page-scroll" href="#contact">CONTACT</a>
                   </li>
                   <li>
-                    <a onclick="openSearch()"><i data-toggle="modal" data-target="#search-modal" class="fa fa-search"></i></a>
+                    <a href="javascript:void(0)" onclick="openSearch()"><i data-toggle="modal" data-target="#search-modal" class="fa fa-search"></i></a>
                   </li>
                 </ul>
               </div>
@@ -130,7 +130,7 @@
   <!-- End Slider Area -->
 <!-- search -->
 <div id="search-modal" class="search-modal">
-  <a href="javascript:void(0)" class="fa fa-window-close search"onclick="closeSearch()"></a>
+  <a href="javascript:void(0)" class="fa fa-window-close search" onclick="closeSearch()"></a>
   <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for movies or series.." title="Type in a name">
   <div id="results"></div>
   <div class="not-found">Results Not Found <i class="fa fa-exclamation-circle"></i></div>
@@ -281,12 +281,12 @@
           </div> 
         </a>
 
-        <a href="movies//peppermint/">
+        <a href="movies/peppermint/">
           <div class="cover-body" style=" background-image: url(images/peppermint.jpg);">
             <div class="movies-move">
               <div class="series-details">
                 <div class="single-series">
-                    <p class="cover-content-bottom">Peppermnti (2018)</p>
+                    <p class="cover-content-bottom">Peppermint (2018)</p>
                 </div>
               </div>
             </div>
@@ -353,6 +353,18 @@
           </div> 
         </a>
 
+        <a href="movies/no good deed/">
+          <div class="cover-body" style=" background-image: url(images/no-good-deed.jpg);">
+            <div class="movies-move">
+              <div class="series-details">
+                <div class="single-series">
+                    <p class="cover-content-bottom">No Good Deed (2014)</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </a>
+
 
     </div>
 
@@ -375,7 +387,20 @@
       </div>
 
         <div class="row movser"  style="display: contents;">
-          <a href="series/altered carbon//season 01/">
+         
+            <a href="series/gangs of london/season 01/">
+              <div class="cover-body" style=" background-image: url(images/gangs-of-london.jpg);">
+                <div class="movies-move">
+                  <div class="series-details">
+                    <div class="single-series">
+                        <p class="cover-content-bottom">Gangs Of London</p>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            </a>
+
+          <a href="series/altered carbon/season 01/">
             <div class="cover-body" style=" background-image: url(images/ac.jpg);">
               <div class="movies-move">
                 <div class="series-details">
@@ -543,11 +568,11 @@
           <!-- Start contact icon column -->
           <!-- <div class="col-md-4 col-sm-4 col-xs-12"> -->
             <div class="contact-icon mail text-center">
-              <a href="mailto: Funner_Movies@gmail.com"><div class="single-icon">
+              <a href="mailto: Funner.Movies5@gmail.co.za><div class="single-icon">
                 <i class="fa fa-envelope-o"></i>
                 <p>
                   For enquiries and suggestions, Please kindly send email.<br>
-                  <span>Email: Funner_Movies@gmail.com</span>
+                  <span>Email: Funner.Movies5@gmail.co.za</span>
                 </p>
               </div></a>
             </div>
@@ -600,7 +625,7 @@
                 <h4>APPRECIATIONS / Donations</h4>
                   <p>Pay-Pal <i style="color: darkcyan;" class="fa fa-paypal"></i></p>
                 <div class="footer-contacts">
-                  <p><span>Email:</span> Funner_Movies@gmail.co.za</p>
+                  <p><span>Email:</span> Funner.Movies5@gmail.co.za</p>
                 </div>
               </div>
             </div>

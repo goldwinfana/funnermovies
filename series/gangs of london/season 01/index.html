@@ -8,50 +8,50 @@
   <meta content="" name="description">
 
   <!-- Favicons -->
-  <link href="./../../images/logo-icon.png" rel="icon">
-  <link href="./../../images/logo-icon.png" rel="apple-touch-icon">
+  <link href="./../../../images/logo-icon.png" rel="icon">
+  <link href="./../../../images/logo-icon.png" rel="apple-touch-icon">
 
 
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900" rel="stylesheet">
 
-  <script src="./../../lib/jquery/jquery.min.js"></script>
-  <script src="./../..//lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="./../../../lib/jquery/jquery.min.js"></script>
+  <script src="./../../../lib/bootstrap/js/bootstrap.min.js"></script>
 
   <!-- Bootstrap CSS File -->
-  <link href="./../../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./../../../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Libraries CSS Files -->
-  <link href="./../../lib/nivo-slider/css/nivo-slider.css" rel="stylesheet">
-  <link href="./../../lib/owlcarousel/owl.carousel.css" rel="stylesheet">
-  <link href="./../../lib/owlcarousel/owl.transitions.css" rel="stylesheet">
-  <link href="./../../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="./../../lib/animate/animate.min.css" rel="stylesheet">
-  <link href="./../../lib/venobox/venobox.css" rel="stylesheet">
+  <link href="./../../../lib/nivo-slider/css/nivo-slider.css" rel="stylesheet">
+  <link href="./../../../lib/owlcarousel/owl.carousel.css" rel="stylesheet">
+  <link href="./../../../lib/owlcarousel/owl.transitions.css" rel="stylesheet">
+  <link href="./../../../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="./../../../lib/animate/animate.min.css" rel="stylesheet">
+  <link href="./../../../lib/venobox/venobox.css" rel="stylesheet">
 
   <!-- Nivo Slider Theme -->
   <link href="./../../../css/nivo-slider-theme.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
-  <link href="./../../css/style.css" rel="stylesheet">
-  <link href="./../../movies/movies-style.css" rel="stylesheet">
+  <link href="./../../../css/style.css" rel="stylesheet">
+  <link href="./../../series-style.css" rel="stylesheet">
   <!-- Responsive Stylesheet File -->
-  <link href="./../../css/responsive.css" rel="stylesheet">
+  <link href="./../../../css/responsive.css" rel="stylesheet">
 
 </head>
 
 <body data-spy="scroll" data-target="#navbar-example">
 
-  <div id="movies-modal" class="movies-modal">
-    <iframe width="400" height="500" src="https://www.youtube.com/embed/VzNJVSsjE-I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div id="series-modal" class="series-modal">
+    <iframe width="400" height="500" src="https://www.youtube.com/embed/4CJ5p4XisHs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 
   <div class="menu-toogle">
-     <a href="javascript:void(0)" class="fa fa-window-close"onclick="closeNav()"></a>
-    <a onclick="closeNav()" href="./../../">Home</a>
-    <a onclick="closeNav()" href="./../../movies/">Movies</a>
-    <a onclick="closeNav()" href="./../../series/">Series</a>
+    <button class="btn-danger close" onclick="closeNav()">X</button>
+    <a onclick="closeNav()" href="./../../../">Home</a>
+    <a onclick="closeNav()" href="./../../../movies/">Movies</a>
+    <a onclick="closeNav()" href="./../../../series/">Series</a>
     <a onclick="closeNav()" href="#contact">Contact</a>
   </div>
   
@@ -67,7 +67,7 @@
             <nav class="navbar navbar-default">
               <!-- Brand and toggle get grouped for better mobile display -->
               <div class="navbar-header">
-                <a href="/"><img class="navbar-toggle collapsed img" src="./../../images/logo.png" ></a>
+                <a href="/"><img class="navbar-toggle collapsed img" src="./../../../images/logo.png" ></a>
                 <button type="button" title="Menu" class="navbar-toggle collapsed" onclick="openNav()" aria-expanded="false">
                     <span class="menu-site">&#9776;</span>
 									</button>
@@ -75,16 +75,16 @@
               </div>
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
-                 <img class="company-logo" src="./../../images/logo.png" width="200" style="margin: 2%;margin-left: 0;">
+                 <img class="company-logo" src="./../../../images/logo.png" width="200" style="margin: 2%;margin-left: 0;">
                 <ul class="nav navbar-nav navbar-right">
                   <li class="active">
-                    <a class="page-scroll" href="./../../">HOME</a>
+                    <a class="page-scroll" href="./../../../">HOME</a>
                   </li>
                   <li>
-                    <a class="page-scroll" href="./../../movies/">MOVIES</a>
+                    <a class="page-scroll" href="./../../../movies/">MOVIES</a>
                   </li>
                   <li>
-                    <a class="page-scroll" href="./../../series/">TV-SERIES</a>
+                    <a class="page-scroll" href="./../../../series/">TV-SERIES</a>
                   </li>
                   <li>
                     <a class="page-scroll" href="#contact">CONTACT</a>
@@ -101,27 +101,26 @@
     <!-- header-area end -->
   </header>
   <!-- header end -->
-
+    
   <!-- Start Slider Area -->
-  <div id="movies" class="movies-area area-padding container">
+  <div id="series" class="series-area area-padding container">
   
         <div class="section-title">
-          <span><a href="./../../">HOME</a>  / <a href="./../../movies/"> MOVIES</a>  / The Way Back (2020)</span>
+          <span><a href="./../../../">HOME</a> / <a href="./../../../series/">TV-SERIES</a> / Gangs Of London</span>
         </div>
   
           <div class="video-container container">
       
             <div id="video-cover">
-              <img src="./../../images/the-way-back.jpg" alt="Snow" >
+              <img src="./../../../images/gol.jpg" alt="Snow" >
               <a onclick="playVideo();" class="centered mb-4" data-vbtype="video" data-autoplay="true"></a>
             </div>
       
             <div id="video-cover-play">
               <video id="video-play" width="100%" controls>
-                <source src="./videos/the_way_back.FunnerMovies  .mp4 - Shortcut.lnk"  type='video/mp4'>
                 Your browser does not support HTML video.
               </video>
-              <a id="download-video" href="./videos/the_way_back.FunnerMovies  .mp4 - Shortcut.lnk"  download hidden></a>
+              <a id="download-video"  download hidden></a>
               <button onclick="download()" class="btn-download">Download <i class="fa fa-download"></i></button>
             </div>
       
@@ -132,7 +131,7 @@
   
           <div class="row cover-details" >
               <span style="display: block;">
-                <h2>The Way Back (2020)</h2> <button type="button" class="btn-danger trailor" data-toggle="modal" data-target="#movies-modal"><i class="fa fa-film" aria-hidden="true"></i>  Trailor</button>
+                <h2>Gangs Of London (S01)</h2> <button type="button" class="btn-danger trailor" data-toggle="modal" data-target="#series-modal"><i class="fa fa-film" aria-hidden="true"></i>  Trailor</button>
               </span> 
                 <p></p>
                 <p>Genre : N/A</p>
@@ -142,12 +141,47 @@
                 <p>Release Date : N/A</p>
           </div>
       </div>
-   
+
+      <div class="container eps-seasons" >
+        <div class="">
+          <button onclick="postURL(`?eps=e01`)"  class="btn-primary season">Season 1 </button>
+        </div>
+        <div style="border-top: 1px solid white;"></div>
+        <div>
+            <button id="e01" onclick="postURL(`?eps=e01`)" class="btn-primary eps" >Episode 1
+              <input value="./videos/Gangs_of_london.S01E01.FunnerMovies .mkv - Shortcut.lnk" hidden>
+            </button>
+            <button id="e02" onclick="postURL(`?eps=e02`)" class="btn-primary eps" >Episode 2
+              <input value="./videos/Gangs_of_london.S01E02.FunnerMovies .mkv - Shortcut.lnk" hidden>
+            </button>
+            <button id="e03" onclick="postURL(`?eps=e03`)" class="btn-primary eps" >Episode 3
+              <input value="./videos/Gangs_of_london.S01E03.FunnerMovies .mkv - Shortcut.lnk" hidden>
+            </button>
+            <button id="e04" onclick="postURL(`?eps=e04`)" class="btn-primary eps" >Episode 4
+              <input value="./videos/Gangs_of_london.S01E04.FunnerMovies .mkv - Shortcut.lnk" hidden>
+            </button>
+            <button id="e05" onclick="postURL(`?eps=e05`)" class="btn-primary eps" >Episode 5
+              <input value="./videos/Gangs_of_london.S01E05.FunnerMovies .mkv - Shortcut.lnk" hidden>
+            </button>
+            <button id="e06" onclick="postURL(`?eps=e06`)" class="btn-primary eps" >Episode 6
+              <input value="./videos/Gangs_of_london.S01E06.FunnerMovies .mkv - Shortcut.lnk" hidden>
+            </button>
+            <button id="e07" onclick="postURL(`?eps=e07`)" class="btn-primary eps" >Episode 7
+              <input value="./videos/Gangs_of_london.S01E07.FunnerMovies .mkv - Shortcut.lnk" hidden>
+            </button>
+            <button id="e08" onclick="postURL(`?eps=e08`)" class="btn-primary eps" >Episode 8
+              <input value="./videos/Gangs_of_london.S01E08.FunnerMovies .mkv - Shortcut.lnk" hidden>
+            </button>
+          
+          </div>
+      </div>
+
+      
       
     </div><br/>
    
- <!-- Start contact Area -->
- <div id="contact" class="contact-area">
+<!-- Start contact Area -->
+<div id="contact" class="contact-area">
   <div class="contact-inner area-padding">
     <div class="contact-overly"></div>
     <div class="container ">
@@ -187,7 +221,7 @@
         <div class="col-xs-12">
           <div class="footer-content">
             <div class="footer-head">
-                <img src="./../../images/logo.jpeg" width="300" >
+                <img src="./../../../images/logo.png" width="300" >
                 <p style="font-style: italic;font-weight: bold;">
                   Currently running through small server, and raising capital to expand and upload more of Your
                   favorate Movies and Tv-Series right here on Funner_Movies site. For appreciations and donations
@@ -247,8 +281,8 @@
   <script src="./../../../lib/appear/jquery.appear.js"></script>
   <script src="./../../../lib/isotope/isotope.pkgd.min.js"></script>
 
- 
-  <script src="./../main.js"></script>
+  <script src="./../../../js/main.js"></script>
+  <script src="./../../main.js"></script>
   <script src="./../../../js/toggle.js"></script>
 </body>
 
